@@ -23,3 +23,29 @@ function readPost() {
 
     require('view/postView.php');
 }
+
+// COMMENTS functions
+
+function postComment($postid, $author, $content) {
+    $commentManager = new CommentManager();
+    $comment = $commentManager->createComment($postid, $author, $content);
+
+    if ($comment === false) {
+        throw new Exception('Impossible d\'ajouter le commentaire !');
+    }
+    else {
+        header('Location: index.php?action=readpost&id=' . $postid);
+    }
+}
+
+function reportComment($postid, $commentid) {
+    $commentManager = new CommentManager();
+    $report = $commentManager->reportComment($commentid);
+
+    if ($report === false) {
+        throw new Exception('Impossible de signaler le commentaire !');
+    }
+    else {
+        header('Location: index.php?action=readpost&id=' . $postid);
+    }
+}
