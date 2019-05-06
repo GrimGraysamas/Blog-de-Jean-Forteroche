@@ -1,0 +1,107 @@
+//DIRECTION
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+//ITEM ALIGNMENTS
+
+.alignStart {
+    align-items: flex-start!important;
+}
+
+.alignEnd {
+    align-items: flex-end!important;
+}
+
+.alignCenter {
+    align-items: center!important;
+}
+
+.alignStretch {
+    align-items: stretch!important;
+}
+
+.alignBaseline {
+    align-items: baseline!important;
+}
+
+//CONTENT ALIGNMENTS
+
+.contentStart {
+    align-content: flex-start!important;
+}
+
+.contentEnd {
+    align-content: flex-end!important;
+}
+
+.contentCenter {
+    align-content: center!important;
+}
+
+.contentStretch {
+    align-content: stretch!important;
+}
+
+.contentBetween {
+    align-content: space-between!important;
+}
+
+.contentAround {
+    align-content: space-around!important;
+}
+
+//JUSTIFY 
+
+.flex-start {
+    justify-content: flex-start!important;
+}
+
+.flex-end {
+    justify-content: flex-end!important;
+}
+
+.justifyCenter {
+    justify-content: center!important; 
+}
+
+.spaceBetween {
+    justify-content: space-between!important;
+}
+
+.spaceAround {
+    justify-content: space-around!important;
+}
+
+.spaceEvenly {
+    justify-content: space-evenly!important;
+}
+
+//WRAP
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+//MISCELANEOUS
+
+.fullCentered {
+    display: flex;
+    align-items: center!important;
+    justify-content: center!important;
+}
+
+.firstorder {
+    order: 1!important;
+}

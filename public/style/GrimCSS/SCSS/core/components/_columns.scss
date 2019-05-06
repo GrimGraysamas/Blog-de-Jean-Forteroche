@@ -1,0 +1,37 @@
+@mixin columns() {
+    $cols : $defaultnumberofcolumns;
+    @for $i from 1 through $cols {
+        @for $k from 1 to $i {
+            $col: 100%/$i;
+            .column.is-#{$k}-#{$i} {
+                width: $k*$col;
+            }
+        }
+    }
+}
+
+@mixin offsets() {
+    $cols : $defaultnumberofoffsets;
+    @for $i from 1 through $cols {
+        @for $k from 1 to $i {
+            $col: 100%/$i;
+            .column.offset-#{$k}-#{$i} {
+                margin-left:$k*$col;
+                margin-right:$k*$col;
+            }
+        }
+    }
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    .column {
+        &.is-full {
+        width: 100%;
+        }
+    }
+    @include columns();
+    @include offsets();
+}

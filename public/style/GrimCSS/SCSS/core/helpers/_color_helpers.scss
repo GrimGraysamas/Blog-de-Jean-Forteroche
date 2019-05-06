@@ -1,0 +1,44 @@
+.nobg {
+    background-color: rgba(0,0,0,0)!important;
+}
+
+// .bgImg {
+//     background-image: url(#{$defaultbgimage});  
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+// }
+
+@mixin color() {  
+    @each $color in $colors {
+        .bg#{nth($color, 1)} {
+            background-color: nth($list: $color, $n: 2)
+        }
+        .content#{nth($color, 1)} {
+            color: nth($list: $color, $n: 2)
+        }
+        @each $color2 in $colors {
+            .#{nth($color, 1)}-#{nth($color2, 1)} {
+                background-color: nth($color, 2);
+                color: nth($list: $color2, $n: 2);
+                &.is-outlined {
+                    background-color: nth($list: $color2, $n: 2);
+                    color: nth($list: $color, $n: 2);
+                    border: 1px solid nth($list: $color, $n: 2);
+                    &:hover {
+                        background-color: nth($list: $color, $n: 2);
+                        color: nth($list: $color2, $n: 2);
+                        transition: background-color .4s;
+                        transition: color .2s; 
+                    }
+                }  
+            }
+            .#{nth($color, 1)}-#{nth($color2, 1)}-gradient {
+                background: -webkit-linear-gradient(right, nth($color, 2), nth($color2, 2));
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+@include color();

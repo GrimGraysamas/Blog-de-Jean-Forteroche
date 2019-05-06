@@ -1,0 +1,1 @@
+let sliderTop = new Slider("slides", "prev", "next");

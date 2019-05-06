@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    position: fixed;
+    height: auto;
+    padding: $defaultmenupadding;
+    box-shadow: $mainboxshadow;
+    @if $defaultsideofmenu == right {
+        right: 50px;
+        top: 50px;
+    }
+    @else if $defaultsideofmenu == left {
+        left: 50px;
+        top: 50px;
+    }
+    @else {
+        right: 50px;
+    }
+    .menu-title {
+    margin:0;
+    order: 1;
+    }
+    .menu-control {
+    order: 2;
+        width: 100px;
+    }
+    &:hover {
+        box-shadow: $hoverboxshadow
+    }
+}

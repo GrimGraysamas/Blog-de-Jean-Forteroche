@@ -1,0 +1,13 @@
+.section {
+    height:  $defaultsectionheight;
+    width: 100%;
+    &.is-large {
+        height: $largesectionheight;
+    }
+    &.is-medium {
+        height: $mediumsectionheight;
+    }
+    &.is-small {
+        height: $smallsectionheight;
+    }
+}    

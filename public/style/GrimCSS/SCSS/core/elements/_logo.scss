@@ -1,0 +1,22 @@
+.logo {
+    position:absolute;
+    padding: $defaultlogopadding;
+    @if $defaultsideoflogo == right {
+        right: 50px;
+        top: 50px;
+    }
+    @else if $defaultsideoflogo == left {
+        left: 50px;
+        top: 50px;
+    }
+    @else {
+        left: 50px;
+        top: 50px;
+    }
+    .img {
+        &.is-half {
+            width: 50%;
+            height: auto; 
+        }
+    }
+}

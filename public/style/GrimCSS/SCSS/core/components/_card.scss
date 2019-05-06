@@ -1,0 +1,24 @@
+.card {
+    width: $defaultcardwidth;
+    display: flex;
+    flex-direction: column;
+    justify-content:  $defaultcardjustify;
+
+    .card-title {
+        display: flex;
+        justify-content: $defaultcardjustify;
+        order: 1;
+    }
+
+    .card-img {
+        display: flex;
+        justify-content: $defaultcardjustify;
+        order: 2;
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: $defaultcardjustify;
+        order: 3;
+    }
+}

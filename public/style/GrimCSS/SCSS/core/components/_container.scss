@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    margin: 100px 50px 100px;
+    &.is-vertical {
+        flex-direction: column!important;
+    }
+    &.is-horizontal {
+        flex-direction: row!important;
+    }
+    &.is-large {
+        width: $defaultlargecontainerwidth;
+    }
+    &.is-medium {
+        width: $defaultmediumcontainerwidth;
+    }
+    &.is-normal {
+        width: $defaultnormalcontainerwidth;
+    }
+    &.is-small {
+        width: $defaultsmallcontainerwidth;
+    }
+}

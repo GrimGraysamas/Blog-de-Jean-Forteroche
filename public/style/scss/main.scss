@@ -1,0 +1,19 @@
+@import "variables";
+@import "../GrimCSS/SCSS/core/core";      
+
+* {
+    font-family: $rounded;    
+    color: $defaultcolor;    
+}                                                                 
+form {
+    textarea:focus {
+        outline-offset: 0!important;
+        outline: 0!important;
+    }
+    input:focus {
+        outline-offset: 0!important;
+        outline: 0!important;
+    }
+}
+
+    

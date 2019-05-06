@@ -1,0 +1,44 @@
+@mixin headers() {
+    @for $i from 1 to 7 {
+        h#{$i} {
+            &.title {
+                font-size: nth($list: $titlesfontsizes, $n: $i);
+                font-weight: bold;
+                margin: $defaulttitlesmargin;
+            }
+            &.subtitle {
+                font-size: nth($list: $subtitlesfontsizes, $n: $i);
+                font-weight: normal;
+                margin: $defaultsubtitlesmargin;
+            }
+        }
+    }
+}
+
+@mixin paragraphs {
+    @for $i from 1 to 7 {
+        .is-#{$i} {
+            font-size: nth($list: $paragraphsfontsizes, $n: $i);
+        }
+    }
+}
+
+@mixin fonts {
+    @each $font in $fontfamilys {
+        .#{nth($font, 1)} {
+            font-family: nth($font, 2);
+        }
+        .#{nth($font, 1)}B {
+            font-family: nth($list: $font, $n: 2);
+            font-weight: bold!important;
+        }
+    } 
+}
+
+@include headers();    
+@include paragraphs();
+@include fonts();
+.text-centered {
+    text-align: center;
+}
+

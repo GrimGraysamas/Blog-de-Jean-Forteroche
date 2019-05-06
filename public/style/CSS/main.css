@@ -1,0 +1,5559 @@
+@font-face {
+  font-family: 'kionaregular';
+  src: url("../Fonts/kiona-regular-webfont.woff2") format("woff2"), url("../Fonts/kiona-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'walkway_blackregular';
+  src: url("../Fonts/walkway_black.woff2") format("woff2"), url("../Fonts/walkway_black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'walkway_condensed_boldregular';
+  src: url("../Fonts/walkway_condensed_bold.woff2") format("woff2"), url("../Fonts/walkway_condensed_bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'walkway_condensed_semiboldRg';
+  src: url("../Fonts/walkway_condensed_semibold.woff2") format("woff2"), url("../Fonts/walkway_condensed_semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'walkway_condensedregular';
+  src: url("../Fonts/walkway_condensed.woff2") format("woff2"), url("../Fonts/walkway_condensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'walkway_roundedregular';
+  src: url("../Fonts/walkway_rounded.woff2") format("woff2"), url("../Fonts/walkway_rounded.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url("../Fonts/caviardreams.woff2") format("woff2"), url("../Fonts/caviardreams.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'caviar_dreamsbold';
+  src: url("../Fonts/caviardreams_bold.woff2") format("woff2"), url("../Fonts/caviardreams_bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rounded_eleganceregular';
+  src: url("../Fonts/rounded_elegance.woff2") format("woff2"), url("../Fonts/rounded_elegance.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.marginless {
+  margin: 0 !important;
+}
+
+.paddingless {
+  padding: 0 !important;
+}
+
+.noMleft {
+  margin-left: 0 !important;
+}
+
+.noMright {
+  margin-right: 0 !important;
+}
+
+.noMtop {
+  margin-top: 0 !important;
+}
+
+.noMbottom {
+  margin-bottom: 0 !important;
+}
+
+.noPleft {
+  padding-left: 0 !important;
+}
+
+.noPright {
+  padding-right: 0 !important;
+}
+
+.noPtop {
+  padding-top: 0 !important;
+}
+
+.noPbottom {
+  padding-bottom: 0;
+}
+
+.P25 {
+  padding: 25px !important;
+}
+
+.P25left {
+  padding-left: 25px !important;
+}
+
+.P25right {
+  padding-right: 25px !important;
+}
+
+.P25top {
+  padding-top: 25px !important;
+}
+
+.P25bottom {
+  padding-bottom: 25px !important;
+}
+
+.M25 {
+  margin: 25px !important;
+}
+
+.M25left {
+  margin-left: 25px !important;
+}
+
+.M25right {
+  margin-right: 25px !important;
+}
+
+.M25top {
+  margin-top: 25px !important;
+}
+
+.M25bottom {
+  margin-bottom: 25px !important;
+}
+
+.P50 {
+  padding: 50px !important;
+}
+
+.P50left {
+  padding-left: 50px !important;
+}
+
+.P50right {
+  padding-right: 50px !important;
+}
+
+.P50top {
+  padding-top: 50px !important;
+}
+
+.P50bottom {
+  padding-bottom: 50px !important;
+}
+
+.M50 {
+  margin: 50px !important;
+}
+
+.M50left {
+  margin-left: 50px !important;
+}
+
+.M50right {
+  margin-right: 50px !important;
+}
+
+.M50top {
+  margin-top: 50px !important;
+}
+
+.M50bottom {
+  margin-bottom: 50px !important;
+}
+
+.bordernone {
+  border: none;
+}
+
+.borderT {
+  border-top: 0.5px solid;
+}
+
+.borderB {
+  border-bottom: 0.5px solid;
+}
+
+.borderL {
+  border-left: 0.5px solid;
+}
+
+.borderR {
+  border-right: 0.5px solid;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.textdecorationnone {
+  text-decoration: none;
+}
+
+.nobg {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.bgprimary {
+  background-color: #fefefe;
+}
+
+.contentprimary {
+  color: #fefefe;
+}
+
+.primary-primary {
+  background-color: #fefefe;
+  color: #fefefe;
+}
+
+.primary-primary.is-outlined {
+  background-color: #fefefe;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.primary-primary.is-outlined:hover {
+  background-color: #fefefe;
+  color: #fefefe;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.primary-primary-gradient {
+  background: -webkit-linear-gradient(right, #fefefe, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-secondary {
+  background-color: #fefefe;
+  color: #232531;
+}
+
+.primary-secondary.is-outlined {
+  background-color: #232531;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.primary-secondary.is-outlined:hover {
+  background-color: #fefefe;
+  color: #232531;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.primary-secondary-gradient {
+  background: -webkit-linear-gradient(right, #fefefe, #232531);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-add1 {
+  background-color: #fefefe;
+  color: #ff5733;
+}
+
+.primary-add1.is-outlined {
+  background-color: #ff5733;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.primary-add1.is-outlined:hover {
+  background-color: #fefefe;
+  color: #ff5733;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.primary-add1-gradient {
+  background: -webkit-linear-gradient(right, #fefefe, #ff5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-add2 {
+  background-color: #fefefe;
+  color: #c80139;
+}
+
+.primary-add2.is-outlined {
+  background-color: #c80139;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.primary-add2.is-outlined:hover {
+  background-color: #fefefe;
+  color: #c80139;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.primary-add2-gradient {
+  background: -webkit-linear-gradient(right, #fefefe, #c80139);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-add3 {
+  background-color: #fefefe;
+  color: #3f4046;
+}
+
+.primary-add3.is-outlined {
+  background-color: #3f4046;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.primary-add3.is-outlined:hover {
+  background-color: #fefefe;
+  color: #3f4046;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.primary-add3-gradient {
+  background: -webkit-linear-gradient(right, #fefefe, #3f4046);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-light {
+  background-color: #fefefe;
+  color: #f7f7f7;
+}
+
+.primary-light.is-outlined {
+  background-color: #f7f7f7;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.primary-light.is-outlined:hover {
+  background-color: #fefefe;
+  color: #f7f7f7;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.primary-light-gradient {
+  background: -webkit-linear-gradient(right, #fefefe, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-dark {
+  background-color: #fefefe;
+  color: #1b1d24;
+}
+
+.primary-dark.is-outlined {
+  background-color: #1b1d24;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+.primary-dark.is-outlined:hover {
+  background-color: #fefefe;
+  color: #1b1d24;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.primary-dark-gradient {
+  background: -webkit-linear-gradient(right, #fefefe, #1b1d24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bgsecondary {
+  background-color: #232531;
+}
+
+.contentsecondary {
+  color: #232531;
+}
+
+.secondary-primary {
+  background-color: #232531;
+  color: #fefefe;
+}
+
+.secondary-primary.is-outlined {
+  background-color: #fefefe;
+  color: #232531;
+  border: 1px solid #232531;
+}
+
+.secondary-primary.is-outlined:hover {
+  background-color: #232531;
+  color: #fefefe;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.secondary-primary-gradient {
+  background: -webkit-linear-gradient(right, #232531, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary-secondary {
+  background-color: #232531;
+  color: #232531;
+}
+
+.secondary-secondary.is-outlined {
+  background-color: #232531;
+  color: #232531;
+  border: 1px solid #232531;
+}
+
+.secondary-secondary.is-outlined:hover {
+  background-color: #232531;
+  color: #232531;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.secondary-secondary-gradient {
+  background: -webkit-linear-gradient(right, #232531, #232531);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary-add1 {
+  background-color: #232531;
+  color: #ff5733;
+}
+
+.secondary-add1.is-outlined {
+  background-color: #ff5733;
+  color: #232531;
+  border: 1px solid #232531;
+}
+
+.secondary-add1.is-outlined:hover {
+  background-color: #232531;
+  color: #ff5733;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.secondary-add1-gradient {
+  background: -webkit-linear-gradient(right, #232531, #ff5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary-add2 {
+  background-color: #232531;
+  color: #c80139;
+}
+
+.secondary-add2.is-outlined {
+  background-color: #c80139;
+  color: #232531;
+  border: 1px solid #232531;
+}
+
+.secondary-add2.is-outlined:hover {
+  background-color: #232531;
+  color: #c80139;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.secondary-add2-gradient {
+  background: -webkit-linear-gradient(right, #232531, #c80139);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary-add3 {
+  background-color: #232531;
+  color: #3f4046;
+}
+
+.secondary-add3.is-outlined {
+  background-color: #3f4046;
+  color: #232531;
+  border: 1px solid #232531;
+}
+
+.secondary-add3.is-outlined:hover {
+  background-color: #232531;
+  color: #3f4046;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.secondary-add3-gradient {
+  background: -webkit-linear-gradient(right, #232531, #3f4046);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary-light {
+  background-color: #232531;
+  color: #f7f7f7;
+}
+
+.secondary-light.is-outlined {
+  background-color: #f7f7f7;
+  color: #232531;
+  border: 1px solid #232531;
+}
+
+.secondary-light.is-outlined:hover {
+  background-color: #232531;
+  color: #f7f7f7;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.secondary-light-gradient {
+  background: -webkit-linear-gradient(right, #232531, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary-dark {
+  background-color: #232531;
+  color: #1b1d24;
+}
+
+.secondary-dark.is-outlined {
+  background-color: #1b1d24;
+  color: #232531;
+  border: 1px solid #232531;
+}
+
+.secondary-dark.is-outlined:hover {
+  background-color: #232531;
+  color: #1b1d24;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.secondary-dark-gradient {
+  background: -webkit-linear-gradient(right, #232531, #1b1d24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bgadd1 {
+  background-color: #ff5733;
+}
+
+.contentadd1 {
+  color: #ff5733;
+}
+
+.add1-primary {
+  background-color: #ff5733;
+  color: #fefefe;
+}
+
+.add1-primary.is-outlined {
+  background-color: #fefefe;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+}
+
+.add1-primary.is-outlined:hover {
+  background-color: #ff5733;
+  color: #fefefe;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add1-primary-gradient {
+  background: -webkit-linear-gradient(right, #ff5733, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add1-secondary {
+  background-color: #ff5733;
+  color: #232531;
+}
+
+.add1-secondary.is-outlined {
+  background-color: #232531;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+}
+
+.add1-secondary.is-outlined:hover {
+  background-color: #ff5733;
+  color: #232531;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add1-secondary-gradient {
+  background: -webkit-linear-gradient(right, #ff5733, #232531);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add1-add1 {
+  background-color: #ff5733;
+  color: #ff5733;
+}
+
+.add1-add1.is-outlined {
+  background-color: #ff5733;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+}
+
+.add1-add1.is-outlined:hover {
+  background-color: #ff5733;
+  color: #ff5733;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add1-add1-gradient {
+  background: -webkit-linear-gradient(right, #ff5733, #ff5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add1-add2 {
+  background-color: #ff5733;
+  color: #c80139;
+}
+
+.add1-add2.is-outlined {
+  background-color: #c80139;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+}
+
+.add1-add2.is-outlined:hover {
+  background-color: #ff5733;
+  color: #c80139;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add1-add2-gradient {
+  background: -webkit-linear-gradient(right, #ff5733, #c80139);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add1-add3 {
+  background-color: #ff5733;
+  color: #3f4046;
+}
+
+.add1-add3.is-outlined {
+  background-color: #3f4046;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+}
+
+.add1-add3.is-outlined:hover {
+  background-color: #ff5733;
+  color: #3f4046;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add1-add3-gradient {
+  background: -webkit-linear-gradient(right, #ff5733, #3f4046);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add1-light {
+  background-color: #ff5733;
+  color: #f7f7f7;
+}
+
+.add1-light.is-outlined {
+  background-color: #f7f7f7;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+}
+
+.add1-light.is-outlined:hover {
+  background-color: #ff5733;
+  color: #f7f7f7;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add1-light-gradient {
+  background: -webkit-linear-gradient(right, #ff5733, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add1-dark {
+  background-color: #ff5733;
+  color: #1b1d24;
+}
+
+.add1-dark.is-outlined {
+  background-color: #1b1d24;
+  color: #ff5733;
+  border: 1px solid #ff5733;
+}
+
+.add1-dark.is-outlined:hover {
+  background-color: #ff5733;
+  color: #1b1d24;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add1-dark-gradient {
+  background: -webkit-linear-gradient(right, #ff5733, #1b1d24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bgadd2 {
+  background-color: #c80139;
+}
+
+.contentadd2 {
+  color: #c80139;
+}
+
+.add2-primary {
+  background-color: #c80139;
+  color: #fefefe;
+}
+
+.add2-primary.is-outlined {
+  background-color: #fefefe;
+  color: #c80139;
+  border: 1px solid #c80139;
+}
+
+.add2-primary.is-outlined:hover {
+  background-color: #c80139;
+  color: #fefefe;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add2-primary-gradient {
+  background: -webkit-linear-gradient(right, #c80139, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add2-secondary {
+  background-color: #c80139;
+  color: #232531;
+}
+
+.add2-secondary.is-outlined {
+  background-color: #232531;
+  color: #c80139;
+  border: 1px solid #c80139;
+}
+
+.add2-secondary.is-outlined:hover {
+  background-color: #c80139;
+  color: #232531;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add2-secondary-gradient {
+  background: -webkit-linear-gradient(right, #c80139, #232531);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add2-add1 {
+  background-color: #c80139;
+  color: #ff5733;
+}
+
+.add2-add1.is-outlined {
+  background-color: #ff5733;
+  color: #c80139;
+  border: 1px solid #c80139;
+}
+
+.add2-add1.is-outlined:hover {
+  background-color: #c80139;
+  color: #ff5733;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add2-add1-gradient {
+  background: -webkit-linear-gradient(right, #c80139, #ff5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add2-add2 {
+  background-color: #c80139;
+  color: #c80139;
+}
+
+.add2-add2.is-outlined {
+  background-color: #c80139;
+  color: #c80139;
+  border: 1px solid #c80139;
+}
+
+.add2-add2.is-outlined:hover {
+  background-color: #c80139;
+  color: #c80139;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add2-add2-gradient {
+  background: -webkit-linear-gradient(right, #c80139, #c80139);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add2-add3 {
+  background-color: #c80139;
+  color: #3f4046;
+}
+
+.add2-add3.is-outlined {
+  background-color: #3f4046;
+  color: #c80139;
+  border: 1px solid #c80139;
+}
+
+.add2-add3.is-outlined:hover {
+  background-color: #c80139;
+  color: #3f4046;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add2-add3-gradient {
+  background: -webkit-linear-gradient(right, #c80139, #3f4046);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add2-light {
+  background-color: #c80139;
+  color: #f7f7f7;
+}
+
+.add2-light.is-outlined {
+  background-color: #f7f7f7;
+  color: #c80139;
+  border: 1px solid #c80139;
+}
+
+.add2-light.is-outlined:hover {
+  background-color: #c80139;
+  color: #f7f7f7;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add2-light-gradient {
+  background: -webkit-linear-gradient(right, #c80139, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add2-dark {
+  background-color: #c80139;
+  color: #1b1d24;
+}
+
+.add2-dark.is-outlined {
+  background-color: #1b1d24;
+  color: #c80139;
+  border: 1px solid #c80139;
+}
+
+.add2-dark.is-outlined:hover {
+  background-color: #c80139;
+  color: #1b1d24;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add2-dark-gradient {
+  background: -webkit-linear-gradient(right, #c80139, #1b1d24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bgadd3 {
+  background-color: #3f4046;
+}
+
+.contentadd3 {
+  color: #3f4046;
+}
+
+.add3-primary {
+  background-color: #3f4046;
+  color: #fefefe;
+}
+
+.add3-primary.is-outlined {
+  background-color: #fefefe;
+  color: #3f4046;
+  border: 1px solid #3f4046;
+}
+
+.add3-primary.is-outlined:hover {
+  background-color: #3f4046;
+  color: #fefefe;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add3-primary-gradient {
+  background: -webkit-linear-gradient(right, #3f4046, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add3-secondary {
+  background-color: #3f4046;
+  color: #232531;
+}
+
+.add3-secondary.is-outlined {
+  background-color: #232531;
+  color: #3f4046;
+  border: 1px solid #3f4046;
+}
+
+.add3-secondary.is-outlined:hover {
+  background-color: #3f4046;
+  color: #232531;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add3-secondary-gradient {
+  background: -webkit-linear-gradient(right, #3f4046, #232531);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add3-add1 {
+  background-color: #3f4046;
+  color: #ff5733;
+}
+
+.add3-add1.is-outlined {
+  background-color: #ff5733;
+  color: #3f4046;
+  border: 1px solid #3f4046;
+}
+
+.add3-add1.is-outlined:hover {
+  background-color: #3f4046;
+  color: #ff5733;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add3-add1-gradient {
+  background: -webkit-linear-gradient(right, #3f4046, #ff5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add3-add2 {
+  background-color: #3f4046;
+  color: #c80139;
+}
+
+.add3-add2.is-outlined {
+  background-color: #c80139;
+  color: #3f4046;
+  border: 1px solid #3f4046;
+}
+
+.add3-add2.is-outlined:hover {
+  background-color: #3f4046;
+  color: #c80139;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add3-add2-gradient {
+  background: -webkit-linear-gradient(right, #3f4046, #c80139);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add3-add3 {
+  background-color: #3f4046;
+  color: #3f4046;
+}
+
+.add3-add3.is-outlined {
+  background-color: #3f4046;
+  color: #3f4046;
+  border: 1px solid #3f4046;
+}
+
+.add3-add3.is-outlined:hover {
+  background-color: #3f4046;
+  color: #3f4046;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add3-add3-gradient {
+  background: -webkit-linear-gradient(right, #3f4046, #3f4046);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add3-light {
+  background-color: #3f4046;
+  color: #f7f7f7;
+}
+
+.add3-light.is-outlined {
+  background-color: #f7f7f7;
+  color: #3f4046;
+  border: 1px solid #3f4046;
+}
+
+.add3-light.is-outlined:hover {
+  background-color: #3f4046;
+  color: #f7f7f7;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add3-light-gradient {
+  background: -webkit-linear-gradient(right, #3f4046, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add3-dark {
+  background-color: #3f4046;
+  color: #1b1d24;
+}
+
+.add3-dark.is-outlined {
+  background-color: #1b1d24;
+  color: #3f4046;
+  border: 1px solid #3f4046;
+}
+
+.add3-dark.is-outlined:hover {
+  background-color: #3f4046;
+  color: #1b1d24;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.add3-dark-gradient {
+  background: -webkit-linear-gradient(right, #3f4046, #1b1d24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bglight {
+  background-color: #f7f7f7;
+}
+
+.contentlight {
+  color: #f7f7f7;
+}
+
+.light-primary {
+  background-color: #f7f7f7;
+  color: #fefefe;
+}
+
+.light-primary.is-outlined {
+  background-color: #fefefe;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.light-primary.is-outlined:hover {
+  background-color: #f7f7f7;
+  color: #fefefe;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.light-primary-gradient {
+  background: -webkit-linear-gradient(right, #f7f7f7, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-secondary {
+  background-color: #f7f7f7;
+  color: #232531;
+}
+
+.light-secondary.is-outlined {
+  background-color: #232531;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.light-secondary.is-outlined:hover {
+  background-color: #f7f7f7;
+  color: #232531;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.light-secondary-gradient {
+  background: -webkit-linear-gradient(right, #f7f7f7, #232531);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-add1 {
+  background-color: #f7f7f7;
+  color: #ff5733;
+}
+
+.light-add1.is-outlined {
+  background-color: #ff5733;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.light-add1.is-outlined:hover {
+  background-color: #f7f7f7;
+  color: #ff5733;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.light-add1-gradient {
+  background: -webkit-linear-gradient(right, #f7f7f7, #ff5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-add2 {
+  background-color: #f7f7f7;
+  color: #c80139;
+}
+
+.light-add2.is-outlined {
+  background-color: #c80139;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.light-add2.is-outlined:hover {
+  background-color: #f7f7f7;
+  color: #c80139;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.light-add2-gradient {
+  background: -webkit-linear-gradient(right, #f7f7f7, #c80139);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-add3 {
+  background-color: #f7f7f7;
+  color: #3f4046;
+}
+
+.light-add3.is-outlined {
+  background-color: #3f4046;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.light-add3.is-outlined:hover {
+  background-color: #f7f7f7;
+  color: #3f4046;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.light-add3-gradient {
+  background: -webkit-linear-gradient(right, #f7f7f7, #3f4046);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-light {
+  background-color: #f7f7f7;
+  color: #f7f7f7;
+}
+
+.light-light.is-outlined {
+  background-color: #f7f7f7;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.light-light.is-outlined:hover {
+  background-color: #f7f7f7;
+  color: #f7f7f7;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.light-light-gradient {
+  background: -webkit-linear-gradient(right, #f7f7f7, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-dark {
+  background-color: #f7f7f7;
+  color: #1b1d24;
+}
+
+.light-dark.is-outlined {
+  background-color: #1b1d24;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.light-dark.is-outlined:hover {
+  background-color: #f7f7f7;
+  color: #1b1d24;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.light-dark-gradient {
+  background: -webkit-linear-gradient(right, #f7f7f7, #1b1d24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bgdark {
+  background-color: #1b1d24;
+}
+
+.contentdark {
+  color: #1b1d24;
+}
+
+.dark-primary {
+  background-color: #1b1d24;
+  color: #fefefe;
+}
+
+.dark-primary.is-outlined {
+  background-color: #fefefe;
+  color: #1b1d24;
+  border: 1px solid #1b1d24;
+}
+
+.dark-primary.is-outlined:hover {
+  background-color: #1b1d24;
+  color: #fefefe;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.dark-primary-gradient {
+  background: -webkit-linear-gradient(right, #1b1d24, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-secondary {
+  background-color: #1b1d24;
+  color: #232531;
+}
+
+.dark-secondary.is-outlined {
+  background-color: #232531;
+  color: #1b1d24;
+  border: 1px solid #1b1d24;
+}
+
+.dark-secondary.is-outlined:hover {
+  background-color: #1b1d24;
+  color: #232531;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.dark-secondary-gradient {
+  background: -webkit-linear-gradient(right, #1b1d24, #232531);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-add1 {
+  background-color: #1b1d24;
+  color: #ff5733;
+}
+
+.dark-add1.is-outlined {
+  background-color: #ff5733;
+  color: #1b1d24;
+  border: 1px solid #1b1d24;
+}
+
+.dark-add1.is-outlined:hover {
+  background-color: #1b1d24;
+  color: #ff5733;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.dark-add1-gradient {
+  background: -webkit-linear-gradient(right, #1b1d24, #ff5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-add2 {
+  background-color: #1b1d24;
+  color: #c80139;
+}
+
+.dark-add2.is-outlined {
+  background-color: #c80139;
+  color: #1b1d24;
+  border: 1px solid #1b1d24;
+}
+
+.dark-add2.is-outlined:hover {
+  background-color: #1b1d24;
+  color: #c80139;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.dark-add2-gradient {
+  background: -webkit-linear-gradient(right, #1b1d24, #c80139);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-add3 {
+  background-color: #1b1d24;
+  color: #3f4046;
+}
+
+.dark-add3.is-outlined {
+  background-color: #3f4046;
+  color: #1b1d24;
+  border: 1px solid #1b1d24;
+}
+
+.dark-add3.is-outlined:hover {
+  background-color: #1b1d24;
+  color: #3f4046;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.dark-add3-gradient {
+  background: -webkit-linear-gradient(right, #1b1d24, #3f4046);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-light {
+  background-color: #1b1d24;
+  color: #f7f7f7;
+}
+
+.dark-light.is-outlined {
+  background-color: #f7f7f7;
+  color: #1b1d24;
+  border: 1px solid #1b1d24;
+}
+
+.dark-light.is-outlined:hover {
+  background-color: #1b1d24;
+  color: #f7f7f7;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.dark-light-gradient {
+  background: -webkit-linear-gradient(right, #1b1d24, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-dark {
+  background-color: #1b1d24;
+  color: #1b1d24;
+}
+
+.dark-dark.is-outlined {
+  background-color: #1b1d24;
+  color: #1b1d24;
+  border: 1px solid #1b1d24;
+}
+
+.dark-dark.is-outlined:hover {
+  background-color: #1b1d24;
+  color: #1b1d24;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.dark-dark-gradient {
+  background: -webkit-linear-gradient(right, #1b1d24, #1b1d24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flexColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.alignStart {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.alignEnd {
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+
+.alignCenter {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.alignStretch {
+  -webkit-box-align: stretch !important;
+      -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+}
+
+.alignBaseline {
+  -webkit-box-align: baseline !important;
+      -ms-flex-align: baseline !important;
+          align-items: baseline !important;
+}
+
+.contentStart {
+  -ms-flex-line-pack: start !important;
+      align-content: flex-start !important;
+}
+
+.contentEnd {
+  -ms-flex-line-pack: end !important;
+      align-content: flex-end !important;
+}
+
+.contentCenter {
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+}
+
+.contentStretch {
+  -ms-flex-line-pack: stretch !important;
+      align-content: stretch !important;
+}
+
+.contentBetween {
+  -ms-flex-line-pack: justify !important;
+      align-content: space-between !important;
+}
+
+.contentAround {
+  -ms-flex-line-pack: distribute !important;
+      align-content: space-around !important;
+}
+
+.flex-start {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+.flex-end {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.justifyCenter {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.spaceBetween {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.spaceAround {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+.spaceEvenly {
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.fullCentered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.firstorder {
+  -webkit-box-ordinal-group: 2 !important;
+      -ms-flex-order: 1 !important;
+          order: 1 !important;
+}
+
+h1.title {
+  font-size: 85px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+h1.subtitle {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 5px;
+}
+
+h2.title {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+h2.subtitle {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 5px;
+}
+
+h3.title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+h3.subtitle {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 5px;
+}
+
+h4.title {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+h4.subtitle {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 5px;
+}
+
+h5.title {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+h5.subtitle {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 5px;
+}
+
+h6.title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+h6.subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 5px;
+}
+
+.is-1 {
+  font-size: 25px;
+}
+
+.is-2 {
+  font-size: 22px;
+}
+
+.is-3 {
+  font-size: 18px;
+}
+
+.is-4 {
+  font-size: 15px;
+}
+
+.is-5 {
+  font-size: 11px;
+}
+
+.is-6 {
+  font-size: 8px;
+}
+
+.kiona {
+  font-family: "kionaregular";
+}
+
+.kionaB {
+  font-family: "kionaregular";
+  font-weight: bold !important;
+}
+
+.caviar {
+  font-family: "caviar_dreamsregular";
+}
+
+.caviarB {
+  font-family: "caviar_dreamsregular";
+  font-weight: bold !important;
+}
+
+.caviarB {
+  font-family: "caviar_dreamsbold";
+}
+
+.caviarBB {
+  font-family: "caviar_dreamsbold";
+  font-weight: bold !important;
+}
+
+.rounded {
+  font-family: "rounded_eleganceregular";
+}
+
+.roundedB {
+  font-family: "rounded_eleganceregular";
+  font-weight: bold !important;
+}
+
+.walkwayr {
+  font-family: "walkway_roundedregular";
+}
+
+.walkwayrB {
+  font-family: "walkway_roundedregular";
+  font-weight: bold !important;
+}
+
+.walkwayc {
+  font-family: "walkway_condensedregular";
+}
+
+.walkwaycB {
+  font-family: "walkway_condensedregular";
+  font-weight: bold !important;
+}
+
+.walkwaycs {
+  font-family: "walkway_condensed_semiboldRg";
+}
+
+.walkwaycsB {
+  font-family: "walkway_condensed_semiboldRg";
+  font-weight: bold !important;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.caviar {
+  font-family: "caviar", "caviar_dreamsregular";
+}
+
+.caviarB {
+  font-family: "caviarB", "caviar_dreamsbold";
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hero.has-navbar {
+  height: 90vh;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .nav-wrapper {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .nav-wrapper .nav-item {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar .nav-wrapper .nav-link {
+  text-decoration: none;
+}
+
+.navbar .nav-section-1 {
+  width: 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.navbar .nav-section-2 {
+  width: 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.section {
+  height: 35vh;
+  width: 100%;
+}
+
+.section.is-large {
+  height: 75vh;
+}
+
+.section.is-medium {
+  height: 50vh;
+}
+
+.section.is-small {
+  height: 25vh;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.columns .column.is-full {
+  width: 100%;
+}
+
+.columns .column.is-1-2 {
+  width: 50%;
+}
+
+.columns .column.is-1-3 {
+  width: 33.33333%;
+}
+
+.columns .column.is-2-3 {
+  width: 66.66667%;
+}
+
+.columns .column.is-1-4 {
+  width: 25%;
+}
+
+.columns .column.is-2-4 {
+  width: 50%;
+}
+
+.columns .column.is-3-4 {
+  width: 75%;
+}
+
+.columns .column.is-1-5 {
+  width: 20%;
+}
+
+.columns .column.is-2-5 {
+  width: 40%;
+}
+
+.columns .column.is-3-5 {
+  width: 60%;
+}
+
+.columns .column.is-4-5 {
+  width: 80%;
+}
+
+.columns .column.is-1-6 {
+  width: 16.66667%;
+}
+
+.columns .column.is-2-6 {
+  width: 33.33333%;
+}
+
+.columns .column.is-3-6 {
+  width: 50%;
+}
+
+.columns .column.is-4-6 {
+  width: 66.66667%;
+}
+
+.columns .column.is-5-6 {
+  width: 83.33333%;
+}
+
+.columns .column.is-1-7 {
+  width: 14.28571%;
+}
+
+.columns .column.is-2-7 {
+  width: 28.57143%;
+}
+
+.columns .column.is-3-7 {
+  width: 42.85714%;
+}
+
+.columns .column.is-4-7 {
+  width: 57.14286%;
+}
+
+.columns .column.is-5-7 {
+  width: 71.42857%;
+}
+
+.columns .column.is-6-7 {
+  width: 85.71429%;
+}
+
+.columns .column.is-1-8 {
+  width: 12.5%;
+}
+
+.columns .column.is-2-8 {
+  width: 25%;
+}
+
+.columns .column.is-3-8 {
+  width: 37.5%;
+}
+
+.columns .column.is-4-8 {
+  width: 50%;
+}
+
+.columns .column.is-5-8 {
+  width: 62.5%;
+}
+
+.columns .column.is-6-8 {
+  width: 75%;
+}
+
+.columns .column.is-7-8 {
+  width: 87.5%;
+}
+
+.columns .column.is-1-9 {
+  width: 11.11111%;
+}
+
+.columns .column.is-2-9 {
+  width: 22.22222%;
+}
+
+.columns .column.is-3-9 {
+  width: 33.33333%;
+}
+
+.columns .column.is-4-9 {
+  width: 44.44444%;
+}
+
+.columns .column.is-5-9 {
+  width: 55.55556%;
+}
+
+.columns .column.is-6-9 {
+  width: 66.66667%;
+}
+
+.columns .column.is-7-9 {
+  width: 77.77778%;
+}
+
+.columns .column.is-8-9 {
+  width: 88.88889%;
+}
+
+.columns .column.offset-1-2 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-1-3 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-2-3 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-1-4 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-2-4 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-3-4 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-1-5 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.columns .column.offset-2-5 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.columns .column.offset-3-5 {
+  margin-left: 60%;
+  margin-right: 60%;
+}
+
+.columns .column.offset-4-5 {
+  margin-left: 80%;
+  margin-right: 80%;
+}
+
+.columns .column.offset-1-6 {
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+}
+
+.columns .column.offset-2-6 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-3-6 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-4-6 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-5-6 {
+  margin-left: 83.33333%;
+  margin-right: 83.33333%;
+}
+
+.columns .column.offset-1-7 {
+  margin-left: 14.28571%;
+  margin-right: 14.28571%;
+}
+
+.columns .column.offset-2-7 {
+  margin-left: 28.57143%;
+  margin-right: 28.57143%;
+}
+
+.columns .column.offset-3-7 {
+  margin-left: 42.85714%;
+  margin-right: 42.85714%;
+}
+
+.columns .column.offset-4-7 {
+  margin-left: 57.14286%;
+  margin-right: 57.14286%;
+}
+
+.columns .column.offset-5-7 {
+  margin-left: 71.42857%;
+  margin-right: 71.42857%;
+}
+
+.columns .column.offset-6-7 {
+  margin-left: 85.71429%;
+  margin-right: 85.71429%;
+}
+
+.columns .column.offset-1-8 {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.columns .column.offset-2-8 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-3-8 {
+  margin-left: 37.5%;
+  margin-right: 37.5%;
+}
+
+.columns .column.offset-4-8 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-5-8 {
+  margin-left: 62.5%;
+  margin-right: 62.5%;
+}
+
+.columns .column.offset-6-8 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-7-8 {
+  margin-left: 87.5%;
+  margin-right: 87.5%;
+}
+
+.columns .column.offset-1-9 {
+  margin-left: 11.11111%;
+  margin-right: 11.11111%;
+}
+
+.columns .column.offset-2-9 {
+  margin-left: 22.22222%;
+  margin-right: 22.22222%;
+}
+
+.columns .column.offset-3-9 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-4-9 {
+  margin-left: 44.44444%;
+  margin-right: 44.44444%;
+}
+
+.columns .column.offset-5-9 {
+  margin-left: 55.55556%;
+  margin-right: 55.55556%;
+}
+
+.columns .column.offset-6-9 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-7-9 {
+  margin-left: 77.77778%;
+  margin-right: 77.77778%;
+}
+
+.columns .column.offset-8-9 {
+  margin-left: 88.88889%;
+  margin-right: 88.88889%;
+}
+
+.columns .column.offset-1-10 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.columns .column.offset-2-10 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.columns .column.offset-3-10 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.columns .column.offset-4-10 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.columns .column.offset-5-10 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-6-10 {
+  margin-left: 60%;
+  margin-right: 60%;
+}
+
+.columns .column.offset-7-10 {
+  margin-left: 70%;
+  margin-right: 70%;
+}
+
+.columns .column.offset-8-10 {
+  margin-left: 80%;
+  margin-right: 80%;
+}
+
+.columns .column.offset-9-10 {
+  margin-left: 90%;
+  margin-right: 90%;
+}
+
+.columns .column.offset-1-11 {
+  margin-left: 9.09091%;
+  margin-right: 9.09091%;
+}
+
+.columns .column.offset-2-11 {
+  margin-left: 18.18182%;
+  margin-right: 18.18182%;
+}
+
+.columns .column.offset-3-11 {
+  margin-left: 27.27273%;
+  margin-right: 27.27273%;
+}
+
+.columns .column.offset-4-11 {
+  margin-left: 36.36364%;
+  margin-right: 36.36364%;
+}
+
+.columns .column.offset-5-11 {
+  margin-left: 45.45455%;
+  margin-right: 45.45455%;
+}
+
+.columns .column.offset-6-11 {
+  margin-left: 54.54545%;
+  margin-right: 54.54545%;
+}
+
+.columns .column.offset-7-11 {
+  margin-left: 63.63636%;
+  margin-right: 63.63636%;
+}
+
+.columns .column.offset-8-11 {
+  margin-left: 72.72727%;
+  margin-right: 72.72727%;
+}
+
+.columns .column.offset-9-11 {
+  margin-left: 81.81818%;
+  margin-right: 81.81818%;
+}
+
+.columns .column.offset-10-11 {
+  margin-left: 90.90909%;
+  margin-right: 90.90909%;
+}
+
+.columns .column.offset-1-12 {
+  margin-left: 8.33333%;
+  margin-right: 8.33333%;
+}
+
+.columns .column.offset-2-12 {
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+}
+
+.columns .column.offset-3-12 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-4-12 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-5-12 {
+  margin-left: 41.66667%;
+  margin-right: 41.66667%;
+}
+
+.columns .column.offset-6-12 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-7-12 {
+  margin-left: 58.33333%;
+  margin-right: 58.33333%;
+}
+
+.columns .column.offset-8-12 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-9-12 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-10-12 {
+  margin-left: 83.33333%;
+  margin-right: 83.33333%;
+}
+
+.columns .column.offset-11-12 {
+  margin-left: 91.66667%;
+  margin-right: 91.66667%;
+}
+
+.columns .column.offset-1-13 {
+  margin-left: 7.69231%;
+  margin-right: 7.69231%;
+}
+
+.columns .column.offset-2-13 {
+  margin-left: 15.38462%;
+  margin-right: 15.38462%;
+}
+
+.columns .column.offset-3-13 {
+  margin-left: 23.07692%;
+  margin-right: 23.07692%;
+}
+
+.columns .column.offset-4-13 {
+  margin-left: 30.76923%;
+  margin-right: 30.76923%;
+}
+
+.columns .column.offset-5-13 {
+  margin-left: 38.46154%;
+  margin-right: 38.46154%;
+}
+
+.columns .column.offset-6-13 {
+  margin-left: 46.15385%;
+  margin-right: 46.15385%;
+}
+
+.columns .column.offset-7-13 {
+  margin-left: 53.84615%;
+  margin-right: 53.84615%;
+}
+
+.columns .column.offset-8-13 {
+  margin-left: 61.53846%;
+  margin-right: 61.53846%;
+}
+
+.columns .column.offset-9-13 {
+  margin-left: 69.23077%;
+  margin-right: 69.23077%;
+}
+
+.columns .column.offset-10-13 {
+  margin-left: 76.92308%;
+  margin-right: 76.92308%;
+}
+
+.columns .column.offset-11-13 {
+  margin-left: 84.61538%;
+  margin-right: 84.61538%;
+}
+
+.columns .column.offset-12-13 {
+  margin-left: 92.30769%;
+  margin-right: 92.30769%;
+}
+
+.columns .column.offset-1-14 {
+  margin-left: 7.14286%;
+  margin-right: 7.14286%;
+}
+
+.columns .column.offset-2-14 {
+  margin-left: 14.28571%;
+  margin-right: 14.28571%;
+}
+
+.columns .column.offset-3-14 {
+  margin-left: 21.42857%;
+  margin-right: 21.42857%;
+}
+
+.columns .column.offset-4-14 {
+  margin-left: 28.57143%;
+  margin-right: 28.57143%;
+}
+
+.columns .column.offset-5-14 {
+  margin-left: 35.71429%;
+  margin-right: 35.71429%;
+}
+
+.columns .column.offset-6-14 {
+  margin-left: 42.85714%;
+  margin-right: 42.85714%;
+}
+
+.columns .column.offset-7-14 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-8-14 {
+  margin-left: 57.14286%;
+  margin-right: 57.14286%;
+}
+
+.columns .column.offset-9-14 {
+  margin-left: 64.28571%;
+  margin-right: 64.28571%;
+}
+
+.columns .column.offset-10-14 {
+  margin-left: 71.42857%;
+  margin-right: 71.42857%;
+}
+
+.columns .column.offset-11-14 {
+  margin-left: 78.57143%;
+  margin-right: 78.57143%;
+}
+
+.columns .column.offset-12-14 {
+  margin-left: 85.71429%;
+  margin-right: 85.71429%;
+}
+
+.columns .column.offset-13-14 {
+  margin-left: 92.85714%;
+  margin-right: 92.85714%;
+}
+
+.columns .column.offset-1-15 {
+  margin-left: 6.66667%;
+  margin-right: 6.66667%;
+}
+
+.columns .column.offset-2-15 {
+  margin-left: 13.33333%;
+  margin-right: 13.33333%;
+}
+
+.columns .column.offset-3-15 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.columns .column.offset-4-15 {
+  margin-left: 26.66667%;
+  margin-right: 26.66667%;
+}
+
+.columns .column.offset-5-15 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-6-15 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.columns .column.offset-7-15 {
+  margin-left: 46.66667%;
+  margin-right: 46.66667%;
+}
+
+.columns .column.offset-8-15 {
+  margin-left: 53.33333%;
+  margin-right: 53.33333%;
+}
+
+.columns .column.offset-9-15 {
+  margin-left: 60%;
+  margin-right: 60%;
+}
+
+.columns .column.offset-10-15 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-11-15 {
+  margin-left: 73.33333%;
+  margin-right: 73.33333%;
+}
+
+.columns .column.offset-12-15 {
+  margin-left: 80%;
+  margin-right: 80%;
+}
+
+.columns .column.offset-13-15 {
+  margin-left: 86.66667%;
+  margin-right: 86.66667%;
+}
+
+.columns .column.offset-14-15 {
+  margin-left: 93.33333%;
+  margin-right: 93.33333%;
+}
+
+.columns .column.offset-1-16 {
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+}
+
+.columns .column.offset-2-16 {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.columns .column.offset-3-16 {
+  margin-left: 18.75%;
+  margin-right: 18.75%;
+}
+
+.columns .column.offset-4-16 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-5-16 {
+  margin-left: 31.25%;
+  margin-right: 31.25%;
+}
+
+.columns .column.offset-6-16 {
+  margin-left: 37.5%;
+  margin-right: 37.5%;
+}
+
+.columns .column.offset-7-16 {
+  margin-left: 43.75%;
+  margin-right: 43.75%;
+}
+
+.columns .column.offset-8-16 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-9-16 {
+  margin-left: 56.25%;
+  margin-right: 56.25%;
+}
+
+.columns .column.offset-10-16 {
+  margin-left: 62.5%;
+  margin-right: 62.5%;
+}
+
+.columns .column.offset-11-16 {
+  margin-left: 68.75%;
+  margin-right: 68.75%;
+}
+
+.columns .column.offset-12-16 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-13-16 {
+  margin-left: 81.25%;
+  margin-right: 81.25%;
+}
+
+.columns .column.offset-14-16 {
+  margin-left: 87.5%;
+  margin-right: 87.5%;
+}
+
+.columns .column.offset-15-16 {
+  margin-left: 93.75%;
+  margin-right: 93.75%;
+}
+
+.columns .column.offset-1-17 {
+  margin-left: 5.88235%;
+  margin-right: 5.88235%;
+}
+
+.columns .column.offset-2-17 {
+  margin-left: 11.76471%;
+  margin-right: 11.76471%;
+}
+
+.columns .column.offset-3-17 {
+  margin-left: 17.64706%;
+  margin-right: 17.64706%;
+}
+
+.columns .column.offset-4-17 {
+  margin-left: 23.52941%;
+  margin-right: 23.52941%;
+}
+
+.columns .column.offset-5-17 {
+  margin-left: 29.41176%;
+  margin-right: 29.41176%;
+}
+
+.columns .column.offset-6-17 {
+  margin-left: 35.29412%;
+  margin-right: 35.29412%;
+}
+
+.columns .column.offset-7-17 {
+  margin-left: 41.17647%;
+  margin-right: 41.17647%;
+}
+
+.columns .column.offset-8-17 {
+  margin-left: 47.05882%;
+  margin-right: 47.05882%;
+}
+
+.columns .column.offset-9-17 {
+  margin-left: 52.94118%;
+  margin-right: 52.94118%;
+}
+
+.columns .column.offset-10-17 {
+  margin-left: 58.82353%;
+  margin-right: 58.82353%;
+}
+
+.columns .column.offset-11-17 {
+  margin-left: 64.70588%;
+  margin-right: 64.70588%;
+}
+
+.columns .column.offset-12-17 {
+  margin-left: 70.58824%;
+  margin-right: 70.58824%;
+}
+
+.columns .column.offset-13-17 {
+  margin-left: 76.47059%;
+  margin-right: 76.47059%;
+}
+
+.columns .column.offset-14-17 {
+  margin-left: 82.35294%;
+  margin-right: 82.35294%;
+}
+
+.columns .column.offset-15-17 {
+  margin-left: 88.23529%;
+  margin-right: 88.23529%;
+}
+
+.columns .column.offset-16-17 {
+  margin-left: 94.11765%;
+  margin-right: 94.11765%;
+}
+
+.columns .column.offset-1-18 {
+  margin-left: 5.55556%;
+  margin-right: 5.55556%;
+}
+
+.columns .column.offset-2-18 {
+  margin-left: 11.11111%;
+  margin-right: 11.11111%;
+}
+
+.columns .column.offset-3-18 {
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+}
+
+.columns .column.offset-4-18 {
+  margin-left: 22.22222%;
+  margin-right: 22.22222%;
+}
+
+.columns .column.offset-5-18 {
+  margin-left: 27.77778%;
+  margin-right: 27.77778%;
+}
+
+.columns .column.offset-6-18 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-7-18 {
+  margin-left: 38.88889%;
+  margin-right: 38.88889%;
+}
+
+.columns .column.offset-8-18 {
+  margin-left: 44.44444%;
+  margin-right: 44.44444%;
+}
+
+.columns .column.offset-9-18 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-10-18 {
+  margin-left: 55.55556%;
+  margin-right: 55.55556%;
+}
+
+.columns .column.offset-11-18 {
+  margin-left: 61.11111%;
+  margin-right: 61.11111%;
+}
+
+.columns .column.offset-12-18 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-13-18 {
+  margin-left: 72.22222%;
+  margin-right: 72.22222%;
+}
+
+.columns .column.offset-14-18 {
+  margin-left: 77.77778%;
+  margin-right: 77.77778%;
+}
+
+.columns .column.offset-15-18 {
+  margin-left: 83.33333%;
+  margin-right: 83.33333%;
+}
+
+.columns .column.offset-16-18 {
+  margin-left: 88.88889%;
+  margin-right: 88.88889%;
+}
+
+.columns .column.offset-17-18 {
+  margin-left: 94.44444%;
+  margin-right: 94.44444%;
+}
+
+.columns .column.offset-1-19 {
+  margin-left: 5.26316%;
+  margin-right: 5.26316%;
+}
+
+.columns .column.offset-2-19 {
+  margin-left: 10.52632%;
+  margin-right: 10.52632%;
+}
+
+.columns .column.offset-3-19 {
+  margin-left: 15.78947%;
+  margin-right: 15.78947%;
+}
+
+.columns .column.offset-4-19 {
+  margin-left: 21.05263%;
+  margin-right: 21.05263%;
+}
+
+.columns .column.offset-5-19 {
+  margin-left: 26.31579%;
+  margin-right: 26.31579%;
+}
+
+.columns .column.offset-6-19 {
+  margin-left: 31.57895%;
+  margin-right: 31.57895%;
+}
+
+.columns .column.offset-7-19 {
+  margin-left: 36.84211%;
+  margin-right: 36.84211%;
+}
+
+.columns .column.offset-8-19 {
+  margin-left: 42.10526%;
+  margin-right: 42.10526%;
+}
+
+.columns .column.offset-9-19 {
+  margin-left: 47.36842%;
+  margin-right: 47.36842%;
+}
+
+.columns .column.offset-10-19 {
+  margin-left: 52.63158%;
+  margin-right: 52.63158%;
+}
+
+.columns .column.offset-11-19 {
+  margin-left: 57.89474%;
+  margin-right: 57.89474%;
+}
+
+.columns .column.offset-12-19 {
+  margin-left: 63.15789%;
+  margin-right: 63.15789%;
+}
+
+.columns .column.offset-13-19 {
+  margin-left: 68.42105%;
+  margin-right: 68.42105%;
+}
+
+.columns .column.offset-14-19 {
+  margin-left: 73.68421%;
+  margin-right: 73.68421%;
+}
+
+.columns .column.offset-15-19 {
+  margin-left: 78.94737%;
+  margin-right: 78.94737%;
+}
+
+.columns .column.offset-16-19 {
+  margin-left: 84.21053%;
+  margin-right: 84.21053%;
+}
+
+.columns .column.offset-17-19 {
+  margin-left: 89.47368%;
+  margin-right: 89.47368%;
+}
+
+.columns .column.offset-18-19 {
+  margin-left: 94.73684%;
+  margin-right: 94.73684%;
+}
+
+.columns .column.offset-1-20 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.columns .column.offset-2-20 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.columns .column.offset-3-20 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.columns .column.offset-4-20 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.columns .column.offset-5-20 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-6-20 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.columns .column.offset-7-20 {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.columns .column.offset-8-20 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.columns .column.offset-9-20 {
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.columns .column.offset-10-20 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-11-20 {
+  margin-left: 55%;
+  margin-right: 55%;
+}
+
+.columns .column.offset-12-20 {
+  margin-left: 60%;
+  margin-right: 60%;
+}
+
+.columns .column.offset-13-20 {
+  margin-left: 65%;
+  margin-right: 65%;
+}
+
+.columns .column.offset-14-20 {
+  margin-left: 70%;
+  margin-right: 70%;
+}
+
+.columns .column.offset-15-20 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-16-20 {
+  margin-left: 80%;
+  margin-right: 80%;
+}
+
+.columns .column.offset-17-20 {
+  margin-left: 85%;
+  margin-right: 85%;
+}
+
+.columns .column.offset-18-20 {
+  margin-left: 90%;
+  margin-right: 90%;
+}
+
+.columns .column.offset-19-20 {
+  margin-left: 95%;
+  margin-right: 95%;
+}
+
+.columns .column.offset-1-21 {
+  margin-left: 4.7619%;
+  margin-right: 4.7619%;
+}
+
+.columns .column.offset-2-21 {
+  margin-left: 9.52381%;
+  margin-right: 9.52381%;
+}
+
+.columns .column.offset-3-21 {
+  margin-left: 14.28571%;
+  margin-right: 14.28571%;
+}
+
+.columns .column.offset-4-21 {
+  margin-left: 19.04762%;
+  margin-right: 19.04762%;
+}
+
+.columns .column.offset-5-21 {
+  margin-left: 23.80952%;
+  margin-right: 23.80952%;
+}
+
+.columns .column.offset-6-21 {
+  margin-left: 28.57143%;
+  margin-right: 28.57143%;
+}
+
+.columns .column.offset-7-21 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-8-21 {
+  margin-left: 38.09524%;
+  margin-right: 38.09524%;
+}
+
+.columns .column.offset-9-21 {
+  margin-left: 42.85714%;
+  margin-right: 42.85714%;
+}
+
+.columns .column.offset-10-21 {
+  margin-left: 47.61905%;
+  margin-right: 47.61905%;
+}
+
+.columns .column.offset-11-21 {
+  margin-left: 52.38095%;
+  margin-right: 52.38095%;
+}
+
+.columns .column.offset-12-21 {
+  margin-left: 57.14286%;
+  margin-right: 57.14286%;
+}
+
+.columns .column.offset-13-21 {
+  margin-left: 61.90476%;
+  margin-right: 61.90476%;
+}
+
+.columns .column.offset-14-21 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-15-21 {
+  margin-left: 71.42857%;
+  margin-right: 71.42857%;
+}
+
+.columns .column.offset-16-21 {
+  margin-left: 76.19048%;
+  margin-right: 76.19048%;
+}
+
+.columns .column.offset-17-21 {
+  margin-left: 80.95238%;
+  margin-right: 80.95238%;
+}
+
+.columns .column.offset-18-21 {
+  margin-left: 85.71429%;
+  margin-right: 85.71429%;
+}
+
+.columns .column.offset-19-21 {
+  margin-left: 90.47619%;
+  margin-right: 90.47619%;
+}
+
+.columns .column.offset-20-21 {
+  margin-left: 95.2381%;
+  margin-right: 95.2381%;
+}
+
+.columns .column.offset-1-22 {
+  margin-left: 4.54545%;
+  margin-right: 4.54545%;
+}
+
+.columns .column.offset-2-22 {
+  margin-left: 9.09091%;
+  margin-right: 9.09091%;
+}
+
+.columns .column.offset-3-22 {
+  margin-left: 13.63636%;
+  margin-right: 13.63636%;
+}
+
+.columns .column.offset-4-22 {
+  margin-left: 18.18182%;
+  margin-right: 18.18182%;
+}
+
+.columns .column.offset-5-22 {
+  margin-left: 22.72727%;
+  margin-right: 22.72727%;
+}
+
+.columns .column.offset-6-22 {
+  margin-left: 27.27273%;
+  margin-right: 27.27273%;
+}
+
+.columns .column.offset-7-22 {
+  margin-left: 31.81818%;
+  margin-right: 31.81818%;
+}
+
+.columns .column.offset-8-22 {
+  margin-left: 36.36364%;
+  margin-right: 36.36364%;
+}
+
+.columns .column.offset-9-22 {
+  margin-left: 40.90909%;
+  margin-right: 40.90909%;
+}
+
+.columns .column.offset-10-22 {
+  margin-left: 45.45455%;
+  margin-right: 45.45455%;
+}
+
+.columns .column.offset-11-22 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-12-22 {
+  margin-left: 54.54545%;
+  margin-right: 54.54545%;
+}
+
+.columns .column.offset-13-22 {
+  margin-left: 59.09091%;
+  margin-right: 59.09091%;
+}
+
+.columns .column.offset-14-22 {
+  margin-left: 63.63636%;
+  margin-right: 63.63636%;
+}
+
+.columns .column.offset-15-22 {
+  margin-left: 68.18182%;
+  margin-right: 68.18182%;
+}
+
+.columns .column.offset-16-22 {
+  margin-left: 72.72727%;
+  margin-right: 72.72727%;
+}
+
+.columns .column.offset-17-22 {
+  margin-left: 77.27273%;
+  margin-right: 77.27273%;
+}
+
+.columns .column.offset-18-22 {
+  margin-left: 81.81818%;
+  margin-right: 81.81818%;
+}
+
+.columns .column.offset-19-22 {
+  margin-left: 86.36364%;
+  margin-right: 86.36364%;
+}
+
+.columns .column.offset-20-22 {
+  margin-left: 90.90909%;
+  margin-right: 90.90909%;
+}
+
+.columns .column.offset-21-22 {
+  margin-left: 95.45455%;
+  margin-right: 95.45455%;
+}
+
+.columns .column.offset-1-23 {
+  margin-left: 4.34783%;
+  margin-right: 4.34783%;
+}
+
+.columns .column.offset-2-23 {
+  margin-left: 8.69565%;
+  margin-right: 8.69565%;
+}
+
+.columns .column.offset-3-23 {
+  margin-left: 13.04348%;
+  margin-right: 13.04348%;
+}
+
+.columns .column.offset-4-23 {
+  margin-left: 17.3913%;
+  margin-right: 17.3913%;
+}
+
+.columns .column.offset-5-23 {
+  margin-left: 21.73913%;
+  margin-right: 21.73913%;
+}
+
+.columns .column.offset-6-23 {
+  margin-left: 26.08696%;
+  margin-right: 26.08696%;
+}
+
+.columns .column.offset-7-23 {
+  margin-left: 30.43478%;
+  margin-right: 30.43478%;
+}
+
+.columns .column.offset-8-23 {
+  margin-left: 34.78261%;
+  margin-right: 34.78261%;
+}
+
+.columns .column.offset-9-23 {
+  margin-left: 39.13043%;
+  margin-right: 39.13043%;
+}
+
+.columns .column.offset-10-23 {
+  margin-left: 43.47826%;
+  margin-right: 43.47826%;
+}
+
+.columns .column.offset-11-23 {
+  margin-left: 47.82609%;
+  margin-right: 47.82609%;
+}
+
+.columns .column.offset-12-23 {
+  margin-left: 52.17391%;
+  margin-right: 52.17391%;
+}
+
+.columns .column.offset-13-23 {
+  margin-left: 56.52174%;
+  margin-right: 56.52174%;
+}
+
+.columns .column.offset-14-23 {
+  margin-left: 60.86957%;
+  margin-right: 60.86957%;
+}
+
+.columns .column.offset-15-23 {
+  margin-left: 65.21739%;
+  margin-right: 65.21739%;
+}
+
+.columns .column.offset-16-23 {
+  margin-left: 69.56522%;
+  margin-right: 69.56522%;
+}
+
+.columns .column.offset-17-23 {
+  margin-left: 73.91304%;
+  margin-right: 73.91304%;
+}
+
+.columns .column.offset-18-23 {
+  margin-left: 78.26087%;
+  margin-right: 78.26087%;
+}
+
+.columns .column.offset-19-23 {
+  margin-left: 82.6087%;
+  margin-right: 82.6087%;
+}
+
+.columns .column.offset-20-23 {
+  margin-left: 86.95652%;
+  margin-right: 86.95652%;
+}
+
+.columns .column.offset-21-23 {
+  margin-left: 91.30435%;
+  margin-right: 91.30435%;
+}
+
+.columns .column.offset-22-23 {
+  margin-left: 95.65217%;
+  margin-right: 95.65217%;
+}
+
+.columns .column.offset-1-24 {
+  margin-left: 4.16667%;
+  margin-right: 4.16667%;
+}
+
+.columns .column.offset-2-24 {
+  margin-left: 8.33333%;
+  margin-right: 8.33333%;
+}
+
+.columns .column.offset-3-24 {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.columns .column.offset-4-24 {
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+}
+
+.columns .column.offset-5-24 {
+  margin-left: 20.83333%;
+  margin-right: 20.83333%;
+}
+
+.columns .column.offset-6-24 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-7-24 {
+  margin-left: 29.16667%;
+  margin-right: 29.16667%;
+}
+
+.columns .column.offset-8-24 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-9-24 {
+  margin-left: 37.5%;
+  margin-right: 37.5%;
+}
+
+.columns .column.offset-10-24 {
+  margin-left: 41.66667%;
+  margin-right: 41.66667%;
+}
+
+.columns .column.offset-11-24 {
+  margin-left: 45.83333%;
+  margin-right: 45.83333%;
+}
+
+.columns .column.offset-12-24 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-13-24 {
+  margin-left: 54.16667%;
+  margin-right: 54.16667%;
+}
+
+.columns .column.offset-14-24 {
+  margin-left: 58.33333%;
+  margin-right: 58.33333%;
+}
+
+.columns .column.offset-15-24 {
+  margin-left: 62.5%;
+  margin-right: 62.5%;
+}
+
+.columns .column.offset-16-24 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-17-24 {
+  margin-left: 70.83333%;
+  margin-right: 70.83333%;
+}
+
+.columns .column.offset-18-24 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-19-24 {
+  margin-left: 79.16667%;
+  margin-right: 79.16667%;
+}
+
+.columns .column.offset-20-24 {
+  margin-left: 83.33333%;
+  margin-right: 83.33333%;
+}
+
+.columns .column.offset-21-24 {
+  margin-left: 87.5%;
+  margin-right: 87.5%;
+}
+
+.columns .column.offset-22-24 {
+  margin-left: 91.66667%;
+  margin-right: 91.66667%;
+}
+
+.columns .column.offset-23-24 {
+  margin-left: 95.83333%;
+  margin-right: 95.83333%;
+}
+
+.columns .column.offset-1-25 {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.columns .column.offset-2-25 {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.columns .column.offset-3-25 {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.columns .column.offset-4-25 {
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+.columns .column.offset-5-25 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.columns .column.offset-6-25 {
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+.columns .column.offset-7-25 {
+  margin-left: 28%;
+  margin-right: 28%;
+}
+
+.columns .column.offset-8-25 {
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.columns .column.offset-9-25 {
+  margin-left: 36%;
+  margin-right: 36%;
+}
+
+.columns .column.offset-10-25 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.columns .column.offset-11-25 {
+  margin-left: 44%;
+  margin-right: 44%;
+}
+
+.columns .column.offset-12-25 {
+  margin-left: 48%;
+  margin-right: 48%;
+}
+
+.columns .column.offset-13-25 {
+  margin-left: 52%;
+  margin-right: 52%;
+}
+
+.columns .column.offset-14-25 {
+  margin-left: 56%;
+  margin-right: 56%;
+}
+
+.columns .column.offset-15-25 {
+  margin-left: 60%;
+  margin-right: 60%;
+}
+
+.columns .column.offset-16-25 {
+  margin-left: 64%;
+  margin-right: 64%;
+}
+
+.columns .column.offset-17-25 {
+  margin-left: 68%;
+  margin-right: 68%;
+}
+
+.columns .column.offset-18-25 {
+  margin-left: 72%;
+  margin-right: 72%;
+}
+
+.columns .column.offset-19-25 {
+  margin-left: 76%;
+  margin-right: 76%;
+}
+
+.columns .column.offset-20-25 {
+  margin-left: 80%;
+  margin-right: 80%;
+}
+
+.columns .column.offset-21-25 {
+  margin-left: 84%;
+  margin-right: 84%;
+}
+
+.columns .column.offset-22-25 {
+  margin-left: 88%;
+  margin-right: 88%;
+}
+
+.columns .column.offset-23-25 {
+  margin-left: 92%;
+  margin-right: 92%;
+}
+
+.columns .column.offset-24-25 {
+  margin-left: 96%;
+  margin-right: 96%;
+}
+
+.columns .column.offset-1-26 {
+  margin-left: 3.84615%;
+  margin-right: 3.84615%;
+}
+
+.columns .column.offset-2-26 {
+  margin-left: 7.69231%;
+  margin-right: 7.69231%;
+}
+
+.columns .column.offset-3-26 {
+  margin-left: 11.53846%;
+  margin-right: 11.53846%;
+}
+
+.columns .column.offset-4-26 {
+  margin-left: 15.38462%;
+  margin-right: 15.38462%;
+}
+
+.columns .column.offset-5-26 {
+  margin-left: 19.23077%;
+  margin-right: 19.23077%;
+}
+
+.columns .column.offset-6-26 {
+  margin-left: 23.07692%;
+  margin-right: 23.07692%;
+}
+
+.columns .column.offset-7-26 {
+  margin-left: 26.92308%;
+  margin-right: 26.92308%;
+}
+
+.columns .column.offset-8-26 {
+  margin-left: 30.76923%;
+  margin-right: 30.76923%;
+}
+
+.columns .column.offset-9-26 {
+  margin-left: 34.61538%;
+  margin-right: 34.61538%;
+}
+
+.columns .column.offset-10-26 {
+  margin-left: 38.46154%;
+  margin-right: 38.46154%;
+}
+
+.columns .column.offset-11-26 {
+  margin-left: 42.30769%;
+  margin-right: 42.30769%;
+}
+
+.columns .column.offset-12-26 {
+  margin-left: 46.15385%;
+  margin-right: 46.15385%;
+}
+
+.columns .column.offset-13-26 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-14-26 {
+  margin-left: 53.84615%;
+  margin-right: 53.84615%;
+}
+
+.columns .column.offset-15-26 {
+  margin-left: 57.69231%;
+  margin-right: 57.69231%;
+}
+
+.columns .column.offset-16-26 {
+  margin-left: 61.53846%;
+  margin-right: 61.53846%;
+}
+
+.columns .column.offset-17-26 {
+  margin-left: 65.38462%;
+  margin-right: 65.38462%;
+}
+
+.columns .column.offset-18-26 {
+  margin-left: 69.23077%;
+  margin-right: 69.23077%;
+}
+
+.columns .column.offset-19-26 {
+  margin-left: 73.07692%;
+  margin-right: 73.07692%;
+}
+
+.columns .column.offset-20-26 {
+  margin-left: 76.92308%;
+  margin-right: 76.92308%;
+}
+
+.columns .column.offset-21-26 {
+  margin-left: 80.76923%;
+  margin-right: 80.76923%;
+}
+
+.columns .column.offset-22-26 {
+  margin-left: 84.61538%;
+  margin-right: 84.61538%;
+}
+
+.columns .column.offset-23-26 {
+  margin-left: 88.46154%;
+  margin-right: 88.46154%;
+}
+
+.columns .column.offset-24-26 {
+  margin-left: 92.30769%;
+  margin-right: 92.30769%;
+}
+
+.columns .column.offset-25-26 {
+  margin-left: 96.15385%;
+  margin-right: 96.15385%;
+}
+
+.columns .column.offset-1-27 {
+  margin-left: 3.7037%;
+  margin-right: 3.7037%;
+}
+
+.columns .column.offset-2-27 {
+  margin-left: 7.40741%;
+  margin-right: 7.40741%;
+}
+
+.columns .column.offset-3-27 {
+  margin-left: 11.11111%;
+  margin-right: 11.11111%;
+}
+
+.columns .column.offset-4-27 {
+  margin-left: 14.81481%;
+  margin-right: 14.81481%;
+}
+
+.columns .column.offset-5-27 {
+  margin-left: 18.51852%;
+  margin-right: 18.51852%;
+}
+
+.columns .column.offset-6-27 {
+  margin-left: 22.22222%;
+  margin-right: 22.22222%;
+}
+
+.columns .column.offset-7-27 {
+  margin-left: 25.92593%;
+  margin-right: 25.92593%;
+}
+
+.columns .column.offset-8-27 {
+  margin-left: 29.62963%;
+  margin-right: 29.62963%;
+}
+
+.columns .column.offset-9-27 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-10-27 {
+  margin-left: 37.03704%;
+  margin-right: 37.03704%;
+}
+
+.columns .column.offset-11-27 {
+  margin-left: 40.74074%;
+  margin-right: 40.74074%;
+}
+
+.columns .column.offset-12-27 {
+  margin-left: 44.44444%;
+  margin-right: 44.44444%;
+}
+
+.columns .column.offset-13-27 {
+  margin-left: 48.14815%;
+  margin-right: 48.14815%;
+}
+
+.columns .column.offset-14-27 {
+  margin-left: 51.85185%;
+  margin-right: 51.85185%;
+}
+
+.columns .column.offset-15-27 {
+  margin-left: 55.55556%;
+  margin-right: 55.55556%;
+}
+
+.columns .column.offset-16-27 {
+  margin-left: 59.25926%;
+  margin-right: 59.25926%;
+}
+
+.columns .column.offset-17-27 {
+  margin-left: 62.96296%;
+  margin-right: 62.96296%;
+}
+
+.columns .column.offset-18-27 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-19-27 {
+  margin-left: 70.37037%;
+  margin-right: 70.37037%;
+}
+
+.columns .column.offset-20-27 {
+  margin-left: 74.07407%;
+  margin-right: 74.07407%;
+}
+
+.columns .column.offset-21-27 {
+  margin-left: 77.77778%;
+  margin-right: 77.77778%;
+}
+
+.columns .column.offset-22-27 {
+  margin-left: 81.48148%;
+  margin-right: 81.48148%;
+}
+
+.columns .column.offset-23-27 {
+  margin-left: 85.18519%;
+  margin-right: 85.18519%;
+}
+
+.columns .column.offset-24-27 {
+  margin-left: 88.88889%;
+  margin-right: 88.88889%;
+}
+
+.columns .column.offset-25-27 {
+  margin-left: 92.59259%;
+  margin-right: 92.59259%;
+}
+
+.columns .column.offset-26-27 {
+  margin-left: 96.2963%;
+  margin-right: 96.2963%;
+}
+
+.columns .column.offset-1-28 {
+  margin-left: 3.57143%;
+  margin-right: 3.57143%;
+}
+
+.columns .column.offset-2-28 {
+  margin-left: 7.14286%;
+  margin-right: 7.14286%;
+}
+
+.columns .column.offset-3-28 {
+  margin-left: 10.71429%;
+  margin-right: 10.71429%;
+}
+
+.columns .column.offset-4-28 {
+  margin-left: 14.28571%;
+  margin-right: 14.28571%;
+}
+
+.columns .column.offset-5-28 {
+  margin-left: 17.85714%;
+  margin-right: 17.85714%;
+}
+
+.columns .column.offset-6-28 {
+  margin-left: 21.42857%;
+  margin-right: 21.42857%;
+}
+
+.columns .column.offset-7-28 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-8-28 {
+  margin-left: 28.57143%;
+  margin-right: 28.57143%;
+}
+
+.columns .column.offset-9-28 {
+  margin-left: 32.14286%;
+  margin-right: 32.14286%;
+}
+
+.columns .column.offset-10-28 {
+  margin-left: 35.71429%;
+  margin-right: 35.71429%;
+}
+
+.columns .column.offset-11-28 {
+  margin-left: 39.28571%;
+  margin-right: 39.28571%;
+}
+
+.columns .column.offset-12-28 {
+  margin-left: 42.85714%;
+  margin-right: 42.85714%;
+}
+
+.columns .column.offset-13-28 {
+  margin-left: 46.42857%;
+  margin-right: 46.42857%;
+}
+
+.columns .column.offset-14-28 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-15-28 {
+  margin-left: 53.57143%;
+  margin-right: 53.57143%;
+}
+
+.columns .column.offset-16-28 {
+  margin-left: 57.14286%;
+  margin-right: 57.14286%;
+}
+
+.columns .column.offset-17-28 {
+  margin-left: 60.71429%;
+  margin-right: 60.71429%;
+}
+
+.columns .column.offset-18-28 {
+  margin-left: 64.28571%;
+  margin-right: 64.28571%;
+}
+
+.columns .column.offset-19-28 {
+  margin-left: 67.85714%;
+  margin-right: 67.85714%;
+}
+
+.columns .column.offset-20-28 {
+  margin-left: 71.42857%;
+  margin-right: 71.42857%;
+}
+
+.columns .column.offset-21-28 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-22-28 {
+  margin-left: 78.57143%;
+  margin-right: 78.57143%;
+}
+
+.columns .column.offset-23-28 {
+  margin-left: 82.14286%;
+  margin-right: 82.14286%;
+}
+
+.columns .column.offset-24-28 {
+  margin-left: 85.71429%;
+  margin-right: 85.71429%;
+}
+
+.columns .column.offset-25-28 {
+  margin-left: 89.28571%;
+  margin-right: 89.28571%;
+}
+
+.columns .column.offset-26-28 {
+  margin-left: 92.85714%;
+  margin-right: 92.85714%;
+}
+
+.columns .column.offset-27-28 {
+  margin-left: 96.42857%;
+  margin-right: 96.42857%;
+}
+
+.columns .column.offset-1-29 {
+  margin-left: 3.44828%;
+  margin-right: 3.44828%;
+}
+
+.columns .column.offset-2-29 {
+  margin-left: 6.89655%;
+  margin-right: 6.89655%;
+}
+
+.columns .column.offset-3-29 {
+  margin-left: 10.34483%;
+  margin-right: 10.34483%;
+}
+
+.columns .column.offset-4-29 {
+  margin-left: 13.7931%;
+  margin-right: 13.7931%;
+}
+
+.columns .column.offset-5-29 {
+  margin-left: 17.24138%;
+  margin-right: 17.24138%;
+}
+
+.columns .column.offset-6-29 {
+  margin-left: 20.68966%;
+  margin-right: 20.68966%;
+}
+
+.columns .column.offset-7-29 {
+  margin-left: 24.13793%;
+  margin-right: 24.13793%;
+}
+
+.columns .column.offset-8-29 {
+  margin-left: 27.58621%;
+  margin-right: 27.58621%;
+}
+
+.columns .column.offset-9-29 {
+  margin-left: 31.03448%;
+  margin-right: 31.03448%;
+}
+
+.columns .column.offset-10-29 {
+  margin-left: 34.48276%;
+  margin-right: 34.48276%;
+}
+
+.columns .column.offset-11-29 {
+  margin-left: 37.93103%;
+  margin-right: 37.93103%;
+}
+
+.columns .column.offset-12-29 {
+  margin-left: 41.37931%;
+  margin-right: 41.37931%;
+}
+
+.columns .column.offset-13-29 {
+  margin-left: 44.82759%;
+  margin-right: 44.82759%;
+}
+
+.columns .column.offset-14-29 {
+  margin-left: 48.27586%;
+  margin-right: 48.27586%;
+}
+
+.columns .column.offset-15-29 {
+  margin-left: 51.72414%;
+  margin-right: 51.72414%;
+}
+
+.columns .column.offset-16-29 {
+  margin-left: 55.17241%;
+  margin-right: 55.17241%;
+}
+
+.columns .column.offset-17-29 {
+  margin-left: 58.62069%;
+  margin-right: 58.62069%;
+}
+
+.columns .column.offset-18-29 {
+  margin-left: 62.06897%;
+  margin-right: 62.06897%;
+}
+
+.columns .column.offset-19-29 {
+  margin-left: 65.51724%;
+  margin-right: 65.51724%;
+}
+
+.columns .column.offset-20-29 {
+  margin-left: 68.96552%;
+  margin-right: 68.96552%;
+}
+
+.columns .column.offset-21-29 {
+  margin-left: 72.41379%;
+  margin-right: 72.41379%;
+}
+
+.columns .column.offset-22-29 {
+  margin-left: 75.86207%;
+  margin-right: 75.86207%;
+}
+
+.columns .column.offset-23-29 {
+  margin-left: 79.31034%;
+  margin-right: 79.31034%;
+}
+
+.columns .column.offset-24-29 {
+  margin-left: 82.75862%;
+  margin-right: 82.75862%;
+}
+
+.columns .column.offset-25-29 {
+  margin-left: 86.2069%;
+  margin-right: 86.2069%;
+}
+
+.columns .column.offset-26-29 {
+  margin-left: 89.65517%;
+  margin-right: 89.65517%;
+}
+
+.columns .column.offset-27-29 {
+  margin-left: 93.10345%;
+  margin-right: 93.10345%;
+}
+
+.columns .column.offset-28-29 {
+  margin-left: 96.55172%;
+  margin-right: 96.55172%;
+}
+
+.columns .column.offset-1-30 {
+  margin-left: 3.33333%;
+  margin-right: 3.33333%;
+}
+
+.columns .column.offset-2-30 {
+  margin-left: 6.66667%;
+  margin-right: 6.66667%;
+}
+
+.columns .column.offset-3-30 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.columns .column.offset-4-30 {
+  margin-left: 13.33333%;
+  margin-right: 13.33333%;
+}
+
+.columns .column.offset-5-30 {
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+}
+
+.columns .column.offset-6-30 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.columns .column.offset-7-30 {
+  margin-left: 23.33333%;
+  margin-right: 23.33333%;
+}
+
+.columns .column.offset-8-30 {
+  margin-left: 26.66667%;
+  margin-right: 26.66667%;
+}
+
+.columns .column.offset-9-30 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.columns .column.offset-10-30 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-11-30 {
+  margin-left: 36.66667%;
+  margin-right: 36.66667%;
+}
+
+.columns .column.offset-12-30 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.columns .column.offset-13-30 {
+  margin-left: 43.33333%;
+  margin-right: 43.33333%;
+}
+
+.columns .column.offset-14-30 {
+  margin-left: 46.66667%;
+  margin-right: 46.66667%;
+}
+
+.columns .column.offset-15-30 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-16-30 {
+  margin-left: 53.33333%;
+  margin-right: 53.33333%;
+}
+
+.columns .column.offset-17-30 {
+  margin-left: 56.66667%;
+  margin-right: 56.66667%;
+}
+
+.columns .column.offset-18-30 {
+  margin-left: 60%;
+  margin-right: 60%;
+}
+
+.columns .column.offset-19-30 {
+  margin-left: 63.33333%;
+  margin-right: 63.33333%;
+}
+
+.columns .column.offset-20-30 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-21-30 {
+  margin-left: 70%;
+  margin-right: 70%;
+}
+
+.columns .column.offset-22-30 {
+  margin-left: 73.33333%;
+  margin-right: 73.33333%;
+}
+
+.columns .column.offset-23-30 {
+  margin-left: 76.66667%;
+  margin-right: 76.66667%;
+}
+
+.columns .column.offset-24-30 {
+  margin-left: 80%;
+  margin-right: 80%;
+}
+
+.columns .column.offset-25-30 {
+  margin-left: 83.33333%;
+  margin-right: 83.33333%;
+}
+
+.columns .column.offset-26-30 {
+  margin-left: 86.66667%;
+  margin-right: 86.66667%;
+}
+
+.columns .column.offset-27-30 {
+  margin-left: 90%;
+  margin-right: 90%;
+}
+
+.columns .column.offset-28-30 {
+  margin-left: 93.33333%;
+  margin-right: 93.33333%;
+}
+
+.columns .column.offset-29-30 {
+  margin-left: 96.66667%;
+  margin-right: 96.66667%;
+}
+
+.columns .column.offset-1-31 {
+  margin-left: 3.22581%;
+  margin-right: 3.22581%;
+}
+
+.columns .column.offset-2-31 {
+  margin-left: 6.45161%;
+  margin-right: 6.45161%;
+}
+
+.columns .column.offset-3-31 {
+  margin-left: 9.67742%;
+  margin-right: 9.67742%;
+}
+
+.columns .column.offset-4-31 {
+  margin-left: 12.90323%;
+  margin-right: 12.90323%;
+}
+
+.columns .column.offset-5-31 {
+  margin-left: 16.12903%;
+  margin-right: 16.12903%;
+}
+
+.columns .column.offset-6-31 {
+  margin-left: 19.35484%;
+  margin-right: 19.35484%;
+}
+
+.columns .column.offset-7-31 {
+  margin-left: 22.58065%;
+  margin-right: 22.58065%;
+}
+
+.columns .column.offset-8-31 {
+  margin-left: 25.80645%;
+  margin-right: 25.80645%;
+}
+
+.columns .column.offset-9-31 {
+  margin-left: 29.03226%;
+  margin-right: 29.03226%;
+}
+
+.columns .column.offset-10-31 {
+  margin-left: 32.25806%;
+  margin-right: 32.25806%;
+}
+
+.columns .column.offset-11-31 {
+  margin-left: 35.48387%;
+  margin-right: 35.48387%;
+}
+
+.columns .column.offset-12-31 {
+  margin-left: 38.70968%;
+  margin-right: 38.70968%;
+}
+
+.columns .column.offset-13-31 {
+  margin-left: 41.93548%;
+  margin-right: 41.93548%;
+}
+
+.columns .column.offset-14-31 {
+  margin-left: 45.16129%;
+  margin-right: 45.16129%;
+}
+
+.columns .column.offset-15-31 {
+  margin-left: 48.3871%;
+  margin-right: 48.3871%;
+}
+
+.columns .column.offset-16-31 {
+  margin-left: 51.6129%;
+  margin-right: 51.6129%;
+}
+
+.columns .column.offset-17-31 {
+  margin-left: 54.83871%;
+  margin-right: 54.83871%;
+}
+
+.columns .column.offset-18-31 {
+  margin-left: 58.06452%;
+  margin-right: 58.06452%;
+}
+
+.columns .column.offset-19-31 {
+  margin-left: 61.29032%;
+  margin-right: 61.29032%;
+}
+
+.columns .column.offset-20-31 {
+  margin-left: 64.51613%;
+  margin-right: 64.51613%;
+}
+
+.columns .column.offset-21-31 {
+  margin-left: 67.74194%;
+  margin-right: 67.74194%;
+}
+
+.columns .column.offset-22-31 {
+  margin-left: 70.96774%;
+  margin-right: 70.96774%;
+}
+
+.columns .column.offset-23-31 {
+  margin-left: 74.19355%;
+  margin-right: 74.19355%;
+}
+
+.columns .column.offset-24-31 {
+  margin-left: 77.41935%;
+  margin-right: 77.41935%;
+}
+
+.columns .column.offset-25-31 {
+  margin-left: 80.64516%;
+  margin-right: 80.64516%;
+}
+
+.columns .column.offset-26-31 {
+  margin-left: 83.87097%;
+  margin-right: 83.87097%;
+}
+
+.columns .column.offset-27-31 {
+  margin-left: 87.09677%;
+  margin-right: 87.09677%;
+}
+
+.columns .column.offset-28-31 {
+  margin-left: 90.32258%;
+  margin-right: 90.32258%;
+}
+
+.columns .column.offset-29-31 {
+  margin-left: 93.54839%;
+  margin-right: 93.54839%;
+}
+
+.columns .column.offset-30-31 {
+  margin-left: 96.77419%;
+  margin-right: 96.77419%;
+}
+
+.columns .column.offset-1-32 {
+  margin-left: 3.125%;
+  margin-right: 3.125%;
+}
+
+.columns .column.offset-2-32 {
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+}
+
+.columns .column.offset-3-32 {
+  margin-left: 9.375%;
+  margin-right: 9.375%;
+}
+
+.columns .column.offset-4-32 {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.columns .column.offset-5-32 {
+  margin-left: 15.625%;
+  margin-right: 15.625%;
+}
+
+.columns .column.offset-6-32 {
+  margin-left: 18.75%;
+  margin-right: 18.75%;
+}
+
+.columns .column.offset-7-32 {
+  margin-left: 21.875%;
+  margin-right: 21.875%;
+}
+
+.columns .column.offset-8-32 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-9-32 {
+  margin-left: 28.125%;
+  margin-right: 28.125%;
+}
+
+.columns .column.offset-10-32 {
+  margin-left: 31.25%;
+  margin-right: 31.25%;
+}
+
+.columns .column.offset-11-32 {
+  margin-left: 34.375%;
+  margin-right: 34.375%;
+}
+
+.columns .column.offset-12-32 {
+  margin-left: 37.5%;
+  margin-right: 37.5%;
+}
+
+.columns .column.offset-13-32 {
+  margin-left: 40.625%;
+  margin-right: 40.625%;
+}
+
+.columns .column.offset-14-32 {
+  margin-left: 43.75%;
+  margin-right: 43.75%;
+}
+
+.columns .column.offset-15-32 {
+  margin-left: 46.875%;
+  margin-right: 46.875%;
+}
+
+.columns .column.offset-16-32 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-17-32 {
+  margin-left: 53.125%;
+  margin-right: 53.125%;
+}
+
+.columns .column.offset-18-32 {
+  margin-left: 56.25%;
+  margin-right: 56.25%;
+}
+
+.columns .column.offset-19-32 {
+  margin-left: 59.375%;
+  margin-right: 59.375%;
+}
+
+.columns .column.offset-20-32 {
+  margin-left: 62.5%;
+  margin-right: 62.5%;
+}
+
+.columns .column.offset-21-32 {
+  margin-left: 65.625%;
+  margin-right: 65.625%;
+}
+
+.columns .column.offset-22-32 {
+  margin-left: 68.75%;
+  margin-right: 68.75%;
+}
+
+.columns .column.offset-23-32 {
+  margin-left: 71.875%;
+  margin-right: 71.875%;
+}
+
+.columns .column.offset-24-32 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-25-32 {
+  margin-left: 78.125%;
+  margin-right: 78.125%;
+}
+
+.columns .column.offset-26-32 {
+  margin-left: 81.25%;
+  margin-right: 81.25%;
+}
+
+.columns .column.offset-27-32 {
+  margin-left: 84.375%;
+  margin-right: 84.375%;
+}
+
+.columns .column.offset-28-32 {
+  margin-left: 87.5%;
+  margin-right: 87.5%;
+}
+
+.columns .column.offset-29-32 {
+  margin-left: 90.625%;
+  margin-right: 90.625%;
+}
+
+.columns .column.offset-30-32 {
+  margin-left: 93.75%;
+  margin-right: 93.75%;
+}
+
+.columns .column.offset-31-32 {
+  margin-left: 96.875%;
+  margin-right: 96.875%;
+}
+
+.columns .column.offset-1-33 {
+  margin-left: 3.0303%;
+  margin-right: 3.0303%;
+}
+
+.columns .column.offset-2-33 {
+  margin-left: 6.06061%;
+  margin-right: 6.06061%;
+}
+
+.columns .column.offset-3-33 {
+  margin-left: 9.09091%;
+  margin-right: 9.09091%;
+}
+
+.columns .column.offset-4-33 {
+  margin-left: 12.12121%;
+  margin-right: 12.12121%;
+}
+
+.columns .column.offset-5-33 {
+  margin-left: 15.15152%;
+  margin-right: 15.15152%;
+}
+
+.columns .column.offset-6-33 {
+  margin-left: 18.18182%;
+  margin-right: 18.18182%;
+}
+
+.columns .column.offset-7-33 {
+  margin-left: 21.21212%;
+  margin-right: 21.21212%;
+}
+
+.columns .column.offset-8-33 {
+  margin-left: 24.24242%;
+  margin-right: 24.24242%;
+}
+
+.columns .column.offset-9-33 {
+  margin-left: 27.27273%;
+  margin-right: 27.27273%;
+}
+
+.columns .column.offset-10-33 {
+  margin-left: 30.30303%;
+  margin-right: 30.30303%;
+}
+
+.columns .column.offset-11-33 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-12-33 {
+  margin-left: 36.36364%;
+  margin-right: 36.36364%;
+}
+
+.columns .column.offset-13-33 {
+  margin-left: 39.39394%;
+  margin-right: 39.39394%;
+}
+
+.columns .column.offset-14-33 {
+  margin-left: 42.42424%;
+  margin-right: 42.42424%;
+}
+
+.columns .column.offset-15-33 {
+  margin-left: 45.45455%;
+  margin-right: 45.45455%;
+}
+
+.columns .column.offset-16-33 {
+  margin-left: 48.48485%;
+  margin-right: 48.48485%;
+}
+
+.columns .column.offset-17-33 {
+  margin-left: 51.51515%;
+  margin-right: 51.51515%;
+}
+
+.columns .column.offset-18-33 {
+  margin-left: 54.54545%;
+  margin-right: 54.54545%;
+}
+
+.columns .column.offset-19-33 {
+  margin-left: 57.57576%;
+  margin-right: 57.57576%;
+}
+
+.columns .column.offset-20-33 {
+  margin-left: 60.60606%;
+  margin-right: 60.60606%;
+}
+
+.columns .column.offset-21-33 {
+  margin-left: 63.63636%;
+  margin-right: 63.63636%;
+}
+
+.columns .column.offset-22-33 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-23-33 {
+  margin-left: 69.69697%;
+  margin-right: 69.69697%;
+}
+
+.columns .column.offset-24-33 {
+  margin-left: 72.72727%;
+  margin-right: 72.72727%;
+}
+
+.columns .column.offset-25-33 {
+  margin-left: 75.75758%;
+  margin-right: 75.75758%;
+}
+
+.columns .column.offset-26-33 {
+  margin-left: 78.78788%;
+  margin-right: 78.78788%;
+}
+
+.columns .column.offset-27-33 {
+  margin-left: 81.81818%;
+  margin-right: 81.81818%;
+}
+
+.columns .column.offset-28-33 {
+  margin-left: 84.84848%;
+  margin-right: 84.84848%;
+}
+
+.columns .column.offset-29-33 {
+  margin-left: 87.87879%;
+  margin-right: 87.87879%;
+}
+
+.columns .column.offset-30-33 {
+  margin-left: 90.90909%;
+  margin-right: 90.90909%;
+}
+
+.columns .column.offset-31-33 {
+  margin-left: 93.93939%;
+  margin-right: 93.93939%;
+}
+
+.columns .column.offset-32-33 {
+  margin-left: 96.9697%;
+  margin-right: 96.9697%;
+}
+
+.columns .column.offset-1-34 {
+  margin-left: 2.94118%;
+  margin-right: 2.94118%;
+}
+
+.columns .column.offset-2-34 {
+  margin-left: 5.88235%;
+  margin-right: 5.88235%;
+}
+
+.columns .column.offset-3-34 {
+  margin-left: 8.82353%;
+  margin-right: 8.82353%;
+}
+
+.columns .column.offset-4-34 {
+  margin-left: 11.76471%;
+  margin-right: 11.76471%;
+}
+
+.columns .column.offset-5-34 {
+  margin-left: 14.70588%;
+  margin-right: 14.70588%;
+}
+
+.columns .column.offset-6-34 {
+  margin-left: 17.64706%;
+  margin-right: 17.64706%;
+}
+
+.columns .column.offset-7-34 {
+  margin-left: 20.58824%;
+  margin-right: 20.58824%;
+}
+
+.columns .column.offset-8-34 {
+  margin-left: 23.52941%;
+  margin-right: 23.52941%;
+}
+
+.columns .column.offset-9-34 {
+  margin-left: 26.47059%;
+  margin-right: 26.47059%;
+}
+
+.columns .column.offset-10-34 {
+  margin-left: 29.41176%;
+  margin-right: 29.41176%;
+}
+
+.columns .column.offset-11-34 {
+  margin-left: 32.35294%;
+  margin-right: 32.35294%;
+}
+
+.columns .column.offset-12-34 {
+  margin-left: 35.29412%;
+  margin-right: 35.29412%;
+}
+
+.columns .column.offset-13-34 {
+  margin-left: 38.23529%;
+  margin-right: 38.23529%;
+}
+
+.columns .column.offset-14-34 {
+  margin-left: 41.17647%;
+  margin-right: 41.17647%;
+}
+
+.columns .column.offset-15-34 {
+  margin-left: 44.11765%;
+  margin-right: 44.11765%;
+}
+
+.columns .column.offset-16-34 {
+  margin-left: 47.05882%;
+  margin-right: 47.05882%;
+}
+
+.columns .column.offset-17-34 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-18-34 {
+  margin-left: 52.94118%;
+  margin-right: 52.94118%;
+}
+
+.columns .column.offset-19-34 {
+  margin-left: 55.88235%;
+  margin-right: 55.88235%;
+}
+
+.columns .column.offset-20-34 {
+  margin-left: 58.82353%;
+  margin-right: 58.82353%;
+}
+
+.columns .column.offset-21-34 {
+  margin-left: 61.76471%;
+  margin-right: 61.76471%;
+}
+
+.columns .column.offset-22-34 {
+  margin-left: 64.70588%;
+  margin-right: 64.70588%;
+}
+
+.columns .column.offset-23-34 {
+  margin-left: 67.64706%;
+  margin-right: 67.64706%;
+}
+
+.columns .column.offset-24-34 {
+  margin-left: 70.58824%;
+  margin-right: 70.58824%;
+}
+
+.columns .column.offset-25-34 {
+  margin-left: 73.52941%;
+  margin-right: 73.52941%;
+}
+
+.columns .column.offset-26-34 {
+  margin-left: 76.47059%;
+  margin-right: 76.47059%;
+}
+
+.columns .column.offset-27-34 {
+  margin-left: 79.41176%;
+  margin-right: 79.41176%;
+}
+
+.columns .column.offset-28-34 {
+  margin-left: 82.35294%;
+  margin-right: 82.35294%;
+}
+
+.columns .column.offset-29-34 {
+  margin-left: 85.29412%;
+  margin-right: 85.29412%;
+}
+
+.columns .column.offset-30-34 {
+  margin-left: 88.23529%;
+  margin-right: 88.23529%;
+}
+
+.columns .column.offset-31-34 {
+  margin-left: 91.17647%;
+  margin-right: 91.17647%;
+}
+
+.columns .column.offset-32-34 {
+  margin-left: 94.11765%;
+  margin-right: 94.11765%;
+}
+
+.columns .column.offset-33-34 {
+  margin-left: 97.05882%;
+  margin-right: 97.05882%;
+}
+
+.columns .column.offset-1-35 {
+  margin-left: 2.85714%;
+  margin-right: 2.85714%;
+}
+
+.columns .column.offset-2-35 {
+  margin-left: 5.71429%;
+  margin-right: 5.71429%;
+}
+
+.columns .column.offset-3-35 {
+  margin-left: 8.57143%;
+  margin-right: 8.57143%;
+}
+
+.columns .column.offset-4-35 {
+  margin-left: 11.42857%;
+  margin-right: 11.42857%;
+}
+
+.columns .column.offset-5-35 {
+  margin-left: 14.28571%;
+  margin-right: 14.28571%;
+}
+
+.columns .column.offset-6-35 {
+  margin-left: 17.14286%;
+  margin-right: 17.14286%;
+}
+
+.columns .column.offset-7-35 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.columns .column.offset-8-35 {
+  margin-left: 22.85714%;
+  margin-right: 22.85714%;
+}
+
+.columns .column.offset-9-35 {
+  margin-left: 25.71429%;
+  margin-right: 25.71429%;
+}
+
+.columns .column.offset-10-35 {
+  margin-left: 28.57143%;
+  margin-right: 28.57143%;
+}
+
+.columns .column.offset-11-35 {
+  margin-left: 31.42857%;
+  margin-right: 31.42857%;
+}
+
+.columns .column.offset-12-35 {
+  margin-left: 34.28571%;
+  margin-right: 34.28571%;
+}
+
+.columns .column.offset-13-35 {
+  margin-left: 37.14286%;
+  margin-right: 37.14286%;
+}
+
+.columns .column.offset-14-35 {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.columns .column.offset-15-35 {
+  margin-left: 42.85714%;
+  margin-right: 42.85714%;
+}
+
+.columns .column.offset-16-35 {
+  margin-left: 45.71429%;
+  margin-right: 45.71429%;
+}
+
+.columns .column.offset-17-35 {
+  margin-left: 48.57143%;
+  margin-right: 48.57143%;
+}
+
+.columns .column.offset-18-35 {
+  margin-left: 51.42857%;
+  margin-right: 51.42857%;
+}
+
+.columns .column.offset-19-35 {
+  margin-left: 54.28571%;
+  margin-right: 54.28571%;
+}
+
+.columns .column.offset-20-35 {
+  margin-left: 57.14286%;
+  margin-right: 57.14286%;
+}
+
+.columns .column.offset-21-35 {
+  margin-left: 60%;
+  margin-right: 60%;
+}
+
+.columns .column.offset-22-35 {
+  margin-left: 62.85714%;
+  margin-right: 62.85714%;
+}
+
+.columns .column.offset-23-35 {
+  margin-left: 65.71429%;
+  margin-right: 65.71429%;
+}
+
+.columns .column.offset-24-35 {
+  margin-left: 68.57143%;
+  margin-right: 68.57143%;
+}
+
+.columns .column.offset-25-35 {
+  margin-left: 71.42857%;
+  margin-right: 71.42857%;
+}
+
+.columns .column.offset-26-35 {
+  margin-left: 74.28571%;
+  margin-right: 74.28571%;
+}
+
+.columns .column.offset-27-35 {
+  margin-left: 77.14286%;
+  margin-right: 77.14286%;
+}
+
+.columns .column.offset-28-35 {
+  margin-left: 80%;
+  margin-right: 80%;
+}
+
+.columns .column.offset-29-35 {
+  margin-left: 82.85714%;
+  margin-right: 82.85714%;
+}
+
+.columns .column.offset-30-35 {
+  margin-left: 85.71429%;
+  margin-right: 85.71429%;
+}
+
+.columns .column.offset-31-35 {
+  margin-left: 88.57143%;
+  margin-right: 88.57143%;
+}
+
+.columns .column.offset-32-35 {
+  margin-left: 91.42857%;
+  margin-right: 91.42857%;
+}
+
+.columns .column.offset-33-35 {
+  margin-left: 94.28571%;
+  margin-right: 94.28571%;
+}
+
+.columns .column.offset-34-35 {
+  margin-left: 97.14286%;
+  margin-right: 97.14286%;
+}
+
+.columns .column.offset-1-36 {
+  margin-left: 2.77778%;
+  margin-right: 2.77778%;
+}
+
+.columns .column.offset-2-36 {
+  margin-left: 5.55556%;
+  margin-right: 5.55556%;
+}
+
+.columns .column.offset-3-36 {
+  margin-left: 8.33333%;
+  margin-right: 8.33333%;
+}
+
+.columns .column.offset-4-36 {
+  margin-left: 11.11111%;
+  margin-right: 11.11111%;
+}
+
+.columns .column.offset-5-36 {
+  margin-left: 13.88889%;
+  margin-right: 13.88889%;
+}
+
+.columns .column.offset-6-36 {
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+}
+
+.columns .column.offset-7-36 {
+  margin-left: 19.44444%;
+  margin-right: 19.44444%;
+}
+
+.columns .column.offset-8-36 {
+  margin-left: 22.22222%;
+  margin-right: 22.22222%;
+}
+
+.columns .column.offset-9-36 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.columns .column.offset-10-36 {
+  margin-left: 27.77778%;
+  margin-right: 27.77778%;
+}
+
+.columns .column.offset-11-36 {
+  margin-left: 30.55556%;
+  margin-right: 30.55556%;
+}
+
+.columns .column.offset-12-36 {
+  margin-left: 33.33333%;
+  margin-right: 33.33333%;
+}
+
+.columns .column.offset-13-36 {
+  margin-left: 36.11111%;
+  margin-right: 36.11111%;
+}
+
+.columns .column.offset-14-36 {
+  margin-left: 38.88889%;
+  margin-right: 38.88889%;
+}
+
+.columns .column.offset-15-36 {
+  margin-left: 41.66667%;
+  margin-right: 41.66667%;
+}
+
+.columns .column.offset-16-36 {
+  margin-left: 44.44444%;
+  margin-right: 44.44444%;
+}
+
+.columns .column.offset-17-36 {
+  margin-left: 47.22222%;
+  margin-right: 47.22222%;
+}
+
+.columns .column.offset-18-36 {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.columns .column.offset-19-36 {
+  margin-left: 52.77778%;
+  margin-right: 52.77778%;
+}
+
+.columns .column.offset-20-36 {
+  margin-left: 55.55556%;
+  margin-right: 55.55556%;
+}
+
+.columns .column.offset-21-36 {
+  margin-left: 58.33333%;
+  margin-right: 58.33333%;
+}
+
+.columns .column.offset-22-36 {
+  margin-left: 61.11111%;
+  margin-right: 61.11111%;
+}
+
+.columns .column.offset-23-36 {
+  margin-left: 63.88889%;
+  margin-right: 63.88889%;
+}
+
+.columns .column.offset-24-36 {
+  margin-left: 66.66667%;
+  margin-right: 66.66667%;
+}
+
+.columns .column.offset-25-36 {
+  margin-left: 69.44444%;
+  margin-right: 69.44444%;
+}
+
+.columns .column.offset-26-36 {
+  margin-left: 72.22222%;
+  margin-right: 72.22222%;
+}
+
+.columns .column.offset-27-36 {
+  margin-left: 75%;
+  margin-right: 75%;
+}
+
+.columns .column.offset-28-36 {
+  margin-left: 77.77778%;
+  margin-right: 77.77778%;
+}
+
+.columns .column.offset-29-36 {
+  margin-left: 80.55556%;
+  margin-right: 80.55556%;
+}
+
+.columns .column.offset-30-36 {
+  margin-left: 83.33333%;
+  margin-right: 83.33333%;
+}
+
+.columns .column.offset-31-36 {
+  margin-left: 86.11111%;
+  margin-right: 86.11111%;
+}
+
+.columns .column.offset-32-36 {
+  margin-left: 88.88889%;
+  margin-right: 88.88889%;
+}
+
+.columns .column.offset-33-36 {
+  margin-left: 91.66667%;
+  margin-right: 91.66667%;
+}
+
+.columns .column.offset-34-36 {
+  margin-left: 94.44444%;
+  margin-right: 94.44444%;
+}
+
+.columns .column.offset-35-36 {
+  margin-left: 97.22222%;
+  margin-right: 97.22222%;
+}
+
+.card {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.card .card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.level {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.slider .slides {
+  width: 100%;
+  height: 50vh;
+  display: none;
+}
+
+.slider .slides.active {
+  display: block;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  height: auto;
+  padding: 15px;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(54, 54, 54, 0.5);
+          box-shadow: 10px 10px 50px 0px rgba(54, 54, 54, 0.5);
+  right: 50px;
+  top: 50px;
+}
+
+.menu .menu-title {
+  margin: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.menu .menu-control {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100px;
+}
+
+.menu:hover {
+  -webkit-box-shadow: 15px 15px 65px 0px rgba(54, 54, 54, 0.7);
+          box-shadow: 15px 15px 65px 0px rgba(54, 54, 54, 0.7);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 50px 100px;
+}
+
+.container.is-vertical {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.container.is-horizontal {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+.container.is-large {
+  width: 1300px;
+}
+
+.container.is-medium {
+  width: 900px;
+}
+
+.container.is-normal {
+  width: 600px;
+}
+
+.container.is-small {
+  width: 300px;
+}
+
+.backtotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(54, 54, 54, 0.5);
+          box-shadow: 10px 10px 50px 0px rgba(54, 54, 54, 0.5);
+  right: 50px;
+  bottom: 50px;
+}
+
+.backtotop:hover {
+  -webkit-box-shadow: 15px 15px 65px 0px rgba(54, 54, 54, 0.7);
+          box-shadow: 15px 15px 65px 0px rgba(54, 54, 54, 0.7);
+}
+
+.button {
+  padding: 15px;
+  border: none;
+  font-size: 18px;
+  margin: 15px;
+  width: 150px;
+}
+
+.button.is-rounded {
+  border-radius: 30px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button.is-large {
+  padding: 15px;
+  font-size: 25px;
+  margin: 25px;
+  width: 350px;
+}
+
+.button.is-large.is-rounded {
+  border-radius: 15px;
+}
+
+.button.is-medium {
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px;
+  width: 250px;
+}
+
+.button.is-medium.is-rounded {
+  border-radius: 10px;
+}
+
+.button.is-small {
+  padding: 5px;
+  font-size: 15px;
+  margin: 10px;
+  width: 100px;
+}
+
+.button.is-small.is-rounded {
+  border-radius: 5px;
+}
+
+.divider {
+  width: 70%;
+  height: 1px;
+  margin: 30px 25px 30px;
+}
+
+.divider.is-vertical {
+  width: 1px;
+  height: auto;
+  margin: 25px 30px 25px;
+}
+
+.divider.is-prim {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.divider.is-sec {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  position: absolute;
+  padding: 15px;
+  left: 50px;
+  top: 50px;
+}
+
+.logo .img.is-half {
+  width: 50%;
+  height: auto;
+}
+
+.icon {
+  background-color: "primary", #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
+}
+
+.icon.is-32x32 {
+  width: 32px;
+  height: 32px;
+}
+
+.icon.is-rounded {
+  border-radius: 100%;
+}
+
+.icon.is-sec {
+  border: solid 2px "secondary", #232531;
+}
+
+* {
+  font-family: "rounded", "rounded_eleganceregular";
+  color: #1b1d24;
+}
+
+form textarea:focus {
+  outline-offset: 0 !important;
+  outline: 0 !important;
+}
+
+form input:focus {
+  outline-offset: 0 !important;
+  outline: 0 !important;
+}

@@ -1,0 +1,24 @@
+.backtotop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: $mainboxshadow;
+    @if $defaultbacktotopside == right {
+        right: 50px;
+        bottom: 50px;
+    }
+    @else if $defaultbacktotopside == left {
+        left: 50px;
+        bottom: 50px;
+    }
+    @else {
+        right: 50px;
+        bottom: 50px;
+    }
+    &:hover {
+        box-shadow: $hoverboxshadow
+    }
+}

@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'kionaregular';
+    src: url('../Fonts/kiona-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/kiona-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'walkway_blackregular';
+    src: url('../Fonts/walkway_black.woff2') format('woff2'),
+         url('../Fonts/walkway_black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'walkway_condensed_boldregular';
+    src: url('../Fonts/walkway_condensed_bold.woff2') format('woff2'),
+         url('../Fonts/walkway_condensed_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'walkway_condensed_semiboldRg';
+    src: url('../Fonts/walkway_condensed_semibold.woff2') format('woff2'),
+         url('../Fonts/walkway_condensed_semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+  
+@font-face {
+    font-family: 'walkway_condensedregular';
+    src: url('../Fonts/walkway_condensed.woff2') format('woff2'),
+         url('../Fonts/walkway_condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'walkway_roundedregular';
+    src: url('../Fonts/walkway_rounded.woff2') format('woff2'),
+         url('../Fonts/walkway_rounded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+  
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../Fonts/caviardreams.woff2') format('woff2'),
+         url('../Fonts/caviardreams.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('../Fonts/caviardreams_bold.woff2') format('woff2'),
+         url('../Fonts/caviardreams_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}  
+
+@font-face {
+    font-family: 'rounded_eleganceregular';
+    src: url('../Fonts/rounded_elegance.woff2') format('woff2'),
+         url('../Fonts/rounded_elegance.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//COLORS VARs 
+
+$white: #fefefe;
+$black: #1b1d24;
+$gray: #3f4046;
+$darkgray: #232531;
+$lightgray: #f7f7f7;
+
+$blue: #007bff;
+$lightblue: lighten($blue, 25%);
+$darkblue: darken($blue, 25%);
+$indigo: #6610f2;
+$lightindigo: lighten($indigo, 25%);
+$darkindigo: darken($indigo, 25%);
+$purple: #6f42c1;  
+$lightpurple: lighten($purple, 25%);
+$darkpurple: darken($purple, 25%);
+$pink: #c80139;
+$lightpink: lighten($pink, 25%);
+$darkpink: darken($pink, 25%);
+$red: #dc3545;
+$lightred: lighten($red, 25%);
+$darkred: darken($red, 25%);
+$orange: #ff5733;
+$lightorange: lighten($orange, 25%);
+$darkorange: darken($orange, 25%);
+$yellow: #ffc107;
+$lightyellow: lighten($yellow, 25%);
+$darkyellow: darken($yellow, 25%);
+$green: #28a745; 
+$lightgreen: lighten($green, 25%);
+$darkgreen: darken($green, 25%);
+$teal: #20c997;
+$lightteal: lighten($teal, 25%);
+$darkteal: darken($teal, 25%);
+$cyan: #17a2b8;
+$lightcyan: lighten($cyan, 25%);
+$darkcyan: darken($cyan, 25%);
+$brown: #72584c;
+$lightbrown: lighten($brown, 25%);
+$darkbrown: darken($brown, 25%);
+
+
+$defaultbgcolor: $white;
+$defaultcolor: $black;  
+
+$primary: 'primary', $white;
+$secondary: 'secondary', $darkgray;
+$add1: 'add1', $orange;
+$add2: 'add2', $pink;
+$add3: 'add3', $gray;
+$light: 'light', $lightgray;
+$dark: 'dark', $black;
+
+$colors: $primary, $secondary, $add1, $add2, $add3, $light, $dark;
+
+
+//IMG VARs 
+
+$defaultbgimage: "../Img/background/main.jpg";  
+   
+//SYNTAX VARs
+
+$titlesfontsizes: 85px, 70px, 50px, 42px, 38px, 35px;
+$subtitlesfontsizes: 35px, 32px, 28px, 25px, 22px, 18px;
+$paragraphsfontsizes: 25px, 22px, 18px, 15px, 11px, 8px; 
+$defaulttitlesmargin: 15px;
+$defaultsubtitlesmargin: 5px;
+
+//FONTS VARs
+
+$kiona: "kiona", 'kionaregular';
+$caviar: "caviar",'caviar_dreamsregular';
+$caviarbold: "caviarB", 'caviar_dreamsbold';
+$rounded: "rounded", 'rounded_eleganceregular';
+$walkwayrounded: "walkwayr", 'walkway_roundedregular'; 
+$walkwaycondensed: "walkwayc", 'walkway_condensedregular';
+$walkwaycondensedsemi: "walkwaycs", 'walkway_condensed_semiboldRg';
+
+$fontfamilys: $kiona, $caviar, $caviarbold, $rounded, $walkwayrounded, $walkwaycondensed, $walkwaycondensedsemi;
+
+//COLUMNS VARs 
+
+$defaultnumberofcolumns : 9; 
+$defaultnumberofoffsets : 36; 
+
+//NAVBAR VARs 
+
+$defaultjustifynav: center, center;  
+$defaultalignnav: center;
+$navitempadding: 10px;
+$defaultnavsectionsnumber: 2;
+$defaultnavheight: 10vh; 
+
+//SECTION VARs  
+  
+$defaultsectionheight: 35vh;
+$largesectionheight: 75vh;
+$mediumsectionheight: 50vh;
+$smallsectionheight: 25vh;
+
+//BUTTON VARs
+
+$defaultbuttonpadding: 15px;
+$defaultbuttonfontsize: 18px;
+$defaultbuttonborderradius: 30px;
+$defaultbuttonmargin: 15px;
+$defaultbuttonwidth:  150px;
+$largebuttonpadding: 15px;
+$largebuttonfontsize: 25px;
+$largebuttonborderradius: 15px;
+$largebuttonmargin: 25px;
+$largebuttonwidth:  350px;
+$mediumbuttonpadding: 10px;
+$mediumbuttonfontsize: 20px;
+$mediumbuttonborderradius: 10px;  
+$mediumbuttonmargin: 20px;
+$mediumbuttonwidth:  250px;
+$smallbuttonpadding: 5px;
+$smallbuttonfontsize: 15px;
+$smallbuttonborderradius: 5px;
+$smallbuttonmargin: 10px;
+$smallbuttonwidth:  100px;
+
+//CARDS VARs
+
+$defaultcardwidth: 20%;
+$defaultcardjustify: center;
+
+//SLIDER VARs 
+
+$defaultslidesheight: 50vh;
+
+//MENU VARs
+
+$defaultmenupadding: 15px;
+$defaultsideofmenu: right; //left or right; default: right
+
+//BACK TO TOP VARs
+
+$defaultbacktotopside: right; 
+
+//BOXSHADOW VARs
+
+$mainboxshadow: 10px 10px 50px 0px rgba(54,54,54,0.5);
+$hoverboxshadow: 15px 15px 65px 0px rgba(54,54,54,0.7);
+
+//LOGO VARs
+  
+$defaultlogopadding: 15px;
+$defaultsideoflogo: left; //right or left; default: left
+
+
+//CONTAINER VARs
+
+$defaultlargecontainerwidth: 1300px;
+$defaultmediumcontainerwidth: 900px;
+$defaultnormalcontainerwidth: 600px;
+$defaultsmallcontainerwidth: 300px;
+
+//ICONS VARs 
+
+$defaulticonmargin: 15px;
+
+//DIVIDER VARs 
+
+$primdividercolor: rgba(0,0,0,0.1);
+$secdividercolor: rgba(255,255,255,0.2);
+
+//BORDER VARs
+
+$borderwidth: 0.5px;

@@ -1,0 +1,17 @@
+.icon {
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: $defaulticonmargin;
+    &.is-32x32 {
+        width: 32px;
+        height: 32px;
+    }
+    &.is-rounded {
+        border-radius: 100%;
+    }
+    &.is-sec {
+        border: solid 2px $secondary;
+    }
+}

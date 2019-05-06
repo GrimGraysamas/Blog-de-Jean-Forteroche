@@ -1,0 +1,45 @@
+.button {
+
+    padding: $defaultbuttonpadding;
+    border:none;
+    font-size: $defaultbuttonfontsize;
+    margin: $defaultbuttonmargin;
+    width: $defaultbuttonwidth;
+    &.is-rounded {
+        border-radius: $defaultbuttonborderradius;
+    }
+
+    &:focus {
+        outline: none;
+    }
+  
+    &.is-large {
+        padding: $largebuttonpadding;
+        font-size: $largebuttonfontsize;
+        margin: $largebuttonmargin;
+        width: $largebuttonwidth;
+        &.is-rounded {
+            border-radius: $largebuttonborderradius;
+        }
+    }
+
+    &.is-medium {
+        padding: $mediumbuttonpadding;
+        font-size: $mediumbuttonfontsize;
+        margin: $mediumbuttonmargin;
+        width: $mediumbuttonwidth;
+        &.is-rounded {
+            border-radius: $mediumbuttonborderradius;
+        }
+    }
+  
+    &.is-small {
+        padding: $smallbuttonpadding;
+        font-size: $smallbuttonfontsize;
+        margin: $smallbuttonmargin;
+        width: $smallbuttonwidth;
+        &.is-rounded {
+            border-radius: $smallbuttonborderradius;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@mixin nav() {
+    $sec-width: 100/$defaultnavsectionsnumber*1%;  
+    @for $i from 1 through $defaultnavsectionsnumber {
+        .nav-section-#{$i} {
+            width: $sec-width;
+            order: $i;
+            display: flex;
+            justify-content: nth($list: $defaultjustifynav , $n: $i)!important;
+            align-items: $defaultalignnav!important;
+        }
+    }
+}  
+
+.navbar {
+    height: $defaultnavheight;
+    width: 100%;  
+    display: flex;
+    .nav-wrapper {  
+        margin: 0;
+        padding: 0; 
+        display: flex;
+        align-items: center;
+        .nav-item {  
+            list-style: none;
+            padding-left: $navitempadding;
+            padding-right: $navitempadding;   
+        }
+        .nav-link {
+            text-decoration: none;
+        }
+    }
+    @include nav();
+}
