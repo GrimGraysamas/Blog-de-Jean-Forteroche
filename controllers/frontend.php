@@ -1,7 +1,7 @@
 <?php 
 
-require_once('model/postmanager.php');
-require_once('model/commentmanager.php');
+require_once('models/postmanager.php');
+require_once('models/commentmanager.php');
 
 // POSTS functions
 

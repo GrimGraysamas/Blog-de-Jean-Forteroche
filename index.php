@@ -2,8 +2,8 @@
 
 session_start();
 
-require('controller/backend.php');
-require('controller/frontend.php');
+require('controllers/backend.php');
+require('controllers/frontend.php');
 
 try {
     listPosts();
