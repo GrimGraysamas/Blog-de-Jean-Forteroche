@@ -5,14 +5,21 @@ require_once('models/commentmanager.php');
 
 // POSTS functions
 
-function listPosts() {
+function listLatestPosts() {
     $postManager = new PostManager();
     $posts = $postManager->readLatestPosts();
 
     $commentManager = new CommentManager();
-    $comments = $commentManager->readFirstComments();
+    $comments = $commentManager->readLatestComments();
 
     require('views/homeView.php');
+}
+
+function listAllPosts() {
+    $postManager = new PostManager();
+    $posts = $postManager->readAllPosts();
+
+    require('views/listPostsView.php');
 }
 
 function readPost() {
@@ -21,7 +28,11 @@ function readPost() {
     $post = $postManager->readPost($_GET['postid']);
     $comments = $commentManager->readComments($_GET['postid']);
 
-    require('view/postView.php');
+    require('views/postView.php');
+}
+
+function search() {
+    $postManager = new PostManager();
 }
 
 // COMMENTS functions
