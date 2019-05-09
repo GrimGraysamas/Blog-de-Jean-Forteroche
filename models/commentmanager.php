@@ -24,9 +24,8 @@ class CommentManager extends Manager
         $db = $this->dbConnect();
         $req = $db->prepare('SELECT * FROM comments WHERE postid = ?');
         $req->execute(array($postId));
-        $data = $req->fetch();
 
-        return $data;
+        return $req;
     }
 
     public function updateComment($commentId, $name, $value) {
@@ -53,7 +52,7 @@ class CommentManager extends Manager
         return $output;
     }
 
-    public function  readFirstComments() {
+    public function  readLatestComments() {
         $db = $this->dbConnect();
         $req = $db->query('SELECT * FROM comments ORDER BY postingtime DESC LIMIT 5');
 
