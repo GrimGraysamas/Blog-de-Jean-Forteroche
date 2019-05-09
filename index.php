@@ -26,8 +26,9 @@ try {
                 else {
                     throw new Exception('Tous les champs ne sont pas remplis !');
                 }
+            }
             else {
-                throw new Exception('Aucun billet choisi')
+                throw new Exception('Aucun billet choisi');
             }
         }
         elseif ($_GET['action'] == 'report') {
