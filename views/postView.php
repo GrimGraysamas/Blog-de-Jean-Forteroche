@@ -12,7 +12,7 @@
     </div>
 </section>
 <section class="section is-small noMtop">
-    <form class="container is-vertical is-medium" action="index.php?action=addcomment&amp;id=<?= $post['id'] ?>" method="post">
+    <form class="container is-vertical is-medium" action="index.php?action=addcomment&amp;postid=<?= $post['id'] ?>" method="post">
         <h2 class="subtitle">Ajouter un commentaire :</h2>
         <div class="container is-horizontal marginless alignEnd P25">
             <div class="container alignCenter is-vertical marginless P25">
@@ -43,7 +43,7 @@
             </div>
             <div class="container marginless M50left"><p><?= htmlspecialchars($data['content']); ?></p></div>
         </div>
-        <a class="button is-small is-rounded is-outlined primary-secondary textdecorationnone M50right" href="index.php?action=report&amp;commentid=<?= $data['id'] ?>&amp;id=<?= $post['id'] ?>">Signaler</a>
+        <a class="button is-small is-rounded is-outlined primary-secondary textdecorationnone M50right" href="index.php?action=report&amp;commentid=<?= $data['id'] ?>&amp;postid=<?= $post['id'] ?>">Signaler</a>
     </div>
     
     <?php  

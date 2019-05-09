@@ -31,10 +31,6 @@ function readPost() {
     require('views/postView.php');
 }
 
-function search() {
-    $postManager = new PostManager();
-}
-
 // COMMENTS functions
 
 function postComment($postid, $author, $content) {
