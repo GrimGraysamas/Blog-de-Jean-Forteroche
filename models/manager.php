@@ -15,4 +15,11 @@ class Manager
 
         return $data;
     }
+
+    public function search($search) {
+        $db = $this->dbConnect();
+        $req = $db->query("SELECT * FROM posts WHERE title LIKE '%$search%' OR author LIKE '%$search%' OR content LIKE '%$search%' OR postingtime LIKE '%$search%'");
+
+        return $req;
+    }
 }
