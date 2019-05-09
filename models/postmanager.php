@@ -44,4 +44,11 @@ class PostManager extends manager
         return $req;
     }
 
+    public function readAllPosts() {
+        $db = $this->dbConnect();  
+        $req = $db->query('SELECT * FROM posts ORDER BY postingtime DESC');
+
+        return $req;
+    }
+
 }
