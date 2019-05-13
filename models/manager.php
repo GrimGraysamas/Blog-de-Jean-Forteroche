@@ -18,7 +18,8 @@ class Manager
 
     public function search($search) {
         $db = $this->dbConnect();
-        $req = $db->query("SELECT * FROM posts WHERE title LIKE '%$search%' OR author LIKE '%$search%' OR content LIKE '%$search%' OR postingtime LIKE '%$search%'");
+        $req = $db->prepare("SELECT * FROM posts WHERE title LIKE '%?%' OR author LIKE '%?%' OR content LIKE '%?%' OR postingtime LIKE '%?%'");
+        $req->execute(array($search, $search, $search, $search));
 
         return $req;
     }

@@ -26,21 +26,21 @@
    </div>
     
     <div class="column is-3-9">
-            <div class="container">
-                <h6 class="subtitle"><u>Derniers commentaires :</u></h6>
-            </div>
-            <div class="container is-vertical">
-            <?php
-            while ( $data = $comments->fetch())
-            {
-            ?>
-                <p>écrit par <?= $data['author'] ?>, le <?= $data['postingtime'] ?></p>
-                <?= $data['content'] ?>
-            <?php
-            }
-            $comments->closeCursor();
-            ?>
-            </div>
+        <div class="container">
+            <h6 class="subtitle"><u>Derniers commentaires :</u></h6>
+        </div>
+        <div class="container is-vertical">
+        <?php
+        while ( $data = $comments->fetch())
+        {
+        ?>
+            <p>écrit par <?= $data['author'] ?>, le <?= $data['postingtime'] ?></p>
+            <?= $data['content'] ?>
+        <?php
+        }
+        $comments->closeCursor();
+        ?>
+        </div>
     </div>
 
     

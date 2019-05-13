@@ -5544,7 +5544,7 @@ h6.subtitle {
 }
 
 * {
-  font-family: "rounded", "rounded_eleganceregular";
+  font-family: 'Raleway', sans-serif;
   color: #1b1d24;
 }
 
@@ -5556,4 +5556,8 @@ form textarea:focus {
 form input:focus {
   outline-offset: 0 !important;
   outline: 0 !important;
+}
+
+.lobster {
+  font-family: 'Lobster', cursive;
 }

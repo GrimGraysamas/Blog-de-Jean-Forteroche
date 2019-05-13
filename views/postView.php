@@ -21,7 +21,7 @@
             </div>
             <div class="container is-vertical marginless P25">
                 <label for="comment">Commentaire :</label>
-                <textarea class="bordernone borderB contentadd1" name="comment" id="comment" rows="1" cols="200"></textarea>
+                <textarea class="bordernone borderB contentadd1" name="comment" id="comment" rows="1" cols="175"></textarea>
             </div>
             <div>
                 <input class="button is-rounded is-outlined primary-add1" type="submit" value="Soumettre">
