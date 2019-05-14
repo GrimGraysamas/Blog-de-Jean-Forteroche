@@ -39,6 +39,17 @@ try {
                 throw new Exception('Aucun commentaire sélectionné');
             }
         }
+        elseif ($_GET['action'] == 'admin') {
+            administrate('JeanForteroche');
+        }
+        elseif ($_GET['action'] == 'connect') {
+            if (!empty($_POST['username']) && !empty($_POST['password'])) {
+                connect($_POST['username'], $_POST['password']);
+            }
+            else {
+                throw new Exception('Tous les champs ne sont pas remplis !');
+            }
+        }
     }
     else {
         listLatestPosts();

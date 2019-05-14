@@ -36,4 +36,12 @@ class UserManager extends manager
 
         return $output;
     }
+    
+    public function getUsernames() {
+        $db = $this->dbConnect();
+        $req = $db->query('SELECT username FROM accounts');
+        $data = $req->fetch();
+
+        return $data;
+    }
 }
