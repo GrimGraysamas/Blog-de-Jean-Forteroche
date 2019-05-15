@@ -28,6 +28,13 @@ class CommentManager extends Manager
         return $req;
     }
 
+    public function readAllComments() {
+        $db = $this->dbConnect();
+        $req = $db->query('SELECT * FROM comments');
+
+        return $req;
+    }
+
     public function updateComment($commentId, $name, $value) {
         $db = $this->dbConnect();
         $req = $db->prepare('UPDATE comments SET ? = ? WHERE id = ?');

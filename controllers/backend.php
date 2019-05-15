@@ -34,10 +34,7 @@ function administrate($username)
         $posts = $postManager->readAllPosts();  
 
         $commentManager = new CommentManager();
-        // $comauthors = $commentManager->getAuthors();
-        // $compostingtime = $commentManager->getPostingTime();
-        // $comcontent = $commentManager->getContent();
-        // $comreports = $commentManager->getReports();
+        $comments = $commentManager->readAllComments();
         require('views/adminView.php');
     }
     else {
