@@ -66,3 +66,18 @@ function editPost() {
 
     require('views/editpostView.php');
 }
+
+function deletePost() {
+    $postManager = new PostManager();
+    $commentManager = new CommentManager();
+
+    $post = $postManager->deletePost($_GET['postid']);
+    $comments = $commentManager->deleteComments($_GET['postid']);
+
+    if ($post == false && $comments == false) {
+        throw new Exception('Impossible de supprimer le billet !');
+    }
+    else {
+        header('Location:index.php?action=admin');
+    }
+}
