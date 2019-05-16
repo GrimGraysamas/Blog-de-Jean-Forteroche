@@ -3,7 +3,10 @@
 <?php ob_start(); ?>
 
 <section class="P50left">
-    <h2 class="subtitle">Gérer les billets : </h2> 
+    <div class="level alignCenter">
+        <h2 class="subtitle">Gérer les billets : </h2>
+        <button class="button is-rounded add1-primary is-outlined M50left"><a href="index.php?action=createpost">Ajouter</a></button>
+    </div> 
     <div class="level columns">
             <p class="column is-1-8 offset-1-32">Titre :</p>
             <p class="column is-1-8">Auteur :</p>
@@ -19,6 +22,7 @@
             <p class="column is-4-8"><?= mb_strimwidth($data['content'], 0, 50, "...")?></p>
             <p class="column is-1-8 offset-1-32"><?= htmlspecialchars($data['postingtime']); ?></p>
         </div>
+        <div class="divider bglight marginless"></div>
     <?php 
     }
     $posts->closeCursor();

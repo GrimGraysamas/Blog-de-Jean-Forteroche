@@ -32,6 +32,7 @@ function administrate($username)
     if (isset($_SESSION['username'])) {
         $postManager = new PostManager();
         $posts = $postManager->readAllPosts();  
+        $lastid = $postManager->getLastId();
 
         $commentManager = new CommentManager();
         $comments = $commentManager->readAllComments();
@@ -40,4 +41,28 @@ function administrate($username)
     else {
         require('views/connectView.php');
     }
+}
+
+function createPost() {
+    $postManager = new PostManager();
+
+    if (isset($_SESSION['username'])) {
+        $username = $_SESSION['username'];
+        $post = $postManager->createPost($username, "", "");
+
+        if ($post == false) {
+            throw new Exception('Impossible d\'ajouter le billet');
+        }
+        else {
+            $lastpostid = $postManager->getLastId();
+            header('Location:index.php?action=editpost&postid=' . $lastpostid['id']);
+        }
+    }
+}
+
+function editPost() {
+    $postManager = new PostManager();
+    $post = $postManager->readPost($_GET['postid']);
+
+    require('views/editpostView.php');
 }

@@ -121,7 +121,7 @@ $lightbrown: lighten($brown, 25%);
 $darkbrown: darken($brown, 25%);
 
 
-$defaultbgcolor: $white;
+$defaultbgcolor: $white;  
 $defaultcolor: $black;  
 
 $primary: 'primary', $white;
@@ -129,7 +129,7 @@ $secondary: 'secondary', $darkgray;
 $add1: 'add1', $orange;
 $add2: 'add2', $pink;
 $add3: 'add3', $gray;
-$light: 'light', $lightgray;
+$light: 'light', $lightgray;  
 $dark: 'dark', $black;
 
 $colors: $primary, $secondary, $add1, $add2, $add3, $light, $dark;

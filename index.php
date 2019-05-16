@@ -50,6 +50,14 @@ try {
                 throw new Exception('Tous les champs ne sont pas remplis !');
             }
         }
+        elseif ($_GET['action'] == 'createpost') {
+            createPost();
+        }
+        elseif ($_GET['action'] == 'editpost') {
+            if (isset($_GET['postid']) && $_GET['postid'] > 0) {
+                editPost();
+            }
+        }
     }
     else {
         listLatestPosts();

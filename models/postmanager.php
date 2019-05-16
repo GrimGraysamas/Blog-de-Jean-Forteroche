@@ -6,7 +6,7 @@ class PostManager extends manager
 {
     public function createPost($author, $title, $content) {
         $db = $this->dbConnect();
-        $req = $db->prepare('INSERT INTO posts(author,title,cotent,postingtime) VALUES(?,?,?, NOW())');
+        $req = $db->prepare('INSERT INTO posts(author,title,content,postingtime) VALUES(?,?,?, NOW())');
         $output = $req->execute(array($author, $title, $content));
 
         return $output;
@@ -42,6 +42,14 @@ class PostManager extends manager
         $req = $db->query('SELECT * FROM posts ORDER BY postingtime DESC LIMIT 5');
 
         return $req;
+    }
+
+    public function getLastId() {
+        $db = $this->dbConnect();
+        $req = $db->query('SELECT id FROM posts ORDER BY id DESC LIMIT 1');
+        $data = $req->fetch();
+
+        return $data;
     }
 
     public function readAllPosts() {
