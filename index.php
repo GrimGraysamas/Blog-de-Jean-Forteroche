@@ -57,17 +57,6 @@ try {
             if (isset($_GET['postid']) && $_GET['postid'] > 0) {
                 editPost();
             }
-            else {
-                throw new Exception('Aucun billet sélectionné !');
-            }
-        }
-        elseif ($_GET['action'] == 'deletepost') {
-            if (isset($_GET['postid']) && $_GET['postid'] > 0) {
-                deletePost();
-            }
-            else {
-                throw new Exception('Aucun billet sélectionné !');
-            }
         }
     }
     else {
