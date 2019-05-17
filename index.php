@@ -83,5 +83,7 @@ try {
     }
 }
 catch (Exception $e) {
-    echo 'Erreur : ' . $e->getMessage();
+    // echo 'Erreur : ' . $e->getMessage();
+    $error = $e->getMessage();
+    require('views/errorview.php');
 }
