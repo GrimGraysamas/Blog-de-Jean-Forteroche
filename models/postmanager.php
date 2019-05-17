@@ -21,10 +21,10 @@ class PostManager extends manager
         return $data;
     }
 
-    public function updatePost($postId, $name, $value) {
+    public function updatePost($postId, $newtitle, $newcontent) {
         $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE posts SET ? = ? WHERE id = ?');
-        $output = $req->execute(array($name, $value, $postId));
+        $req = $db->prepare('UPDATE posts SET title = ?, content = ?, postingtime = NOW() WHERE id = ?');
+        $output = $req->execute(array($newtitle, $newcontent, $postId));
 
         return $output;
     }

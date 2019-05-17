@@ -69,6 +69,14 @@ try {
                 throw new Exception('Aucun billet sélectionné !');
             }
         }
+        elseif ($_GET['action'] == 'applychanges') {
+            if (isset($_GET['postid']) && $_GET['postid'] > 0) {
+                updatePost();
+            }
+            else {
+                throw new Exception('Aucun billet sélectionné !');
+            }
+        }
     }
     else {
         listLatestPosts();

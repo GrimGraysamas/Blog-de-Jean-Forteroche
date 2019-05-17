@@ -67,6 +67,18 @@ function editPost() {
     require('views/editpostView.php');
 }
 
+function updatePost() {
+    $postManager = new PostManager();
+    $update = $postManager->updatePost($_GET['postid'], $_POST['posttitle'], $_POST['postcontent']);
+
+    if ($update == false) {
+        throw new Exception('Impossible de mettre à jour le commentaire !');
+    }
+    else {
+        header('Location:index.php?action=readpost&postid=' . $_GET['postid']);
+    }
+}
+
 function deletePost() {
     $postManager = new PostManager();
     $commentManager = new CommentManager();

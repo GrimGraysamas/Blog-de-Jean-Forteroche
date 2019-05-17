@@ -7,7 +7,7 @@
         <h2 class="title M50top M50bottom noMleft"><?= htmlspecialchars($post['title']); ?></h2>
         <h6 class="subtitle M25bottom M25top noMleft">Ecrit par <strong><?= htmlspecialchars($post['author']); ?></strong> le <?= htmlspecialchars($post['postingtime']); ?></h6>
         <div class="container is-large M50left">
-            <p class="is-1"><?= htmlspecialchars($post['content']); ?></p>
+            <p class="is-1"><?= $post['content'] ?></p>
         </div>
     </div>
 </section>

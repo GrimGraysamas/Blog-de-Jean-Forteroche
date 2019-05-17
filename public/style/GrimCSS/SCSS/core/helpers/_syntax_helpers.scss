@@ -21,7 +21,7 @@
             font-size: nth($list: $paragraphsfontsizes, $n: $i);
         }
     }
-}
+}  
 
 @mixin fonts {
     @each $font in $fontfamilys {
