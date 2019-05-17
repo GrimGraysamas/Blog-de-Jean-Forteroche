@@ -77,6 +77,14 @@ try {
                 throw new Exception('Aucun billet sélectionné !');
             }
         }
+        elseif ($_GET['action'] == 'deletecomment') {
+            if (isset($_GET['commentid']) && $_GET['commentid'] > 0) {
+                deleteComment();
+            }
+            else {
+                throw new Exception('Aucun commentaire sélectionné !');
+            }
+        }
     }
     else {
         listLatestPosts();

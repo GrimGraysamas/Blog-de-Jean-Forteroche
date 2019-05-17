@@ -51,7 +51,6 @@
             <p class="column is-1-8 offset-1-32"><?= htmlspecialchars($data['postingtime']); ?></p>
             <p class="column is-1-8"><?=htmlspecialchars($data['reports']);?></p>
             <div class="column is-1-8 offset-1-32 flexRow alignCenter">
-                <a class="M25right" href="index.php?action=approve&amp;commentid=<?= $data['id'] ?>">Approuver</a>
                 <a href="index.php?action=deletecomment&amp;commentid=<?= $data['id'] ?>">Supprimer</a>
             </div>
         </div>

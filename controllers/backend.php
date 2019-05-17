@@ -93,3 +93,16 @@ function deletePost() {
         header('Location:index.php?action=admin');
     }
 }
+
+function deleteComment() {
+    $commentManager = new CommentManager();
+
+    $comment = $commentManager->deleteComment($_GET['commentid']);
+
+    if ($comment == false) {
+        throw new Exception('Impossible de supprimer le commentaire');
+    }
+    else {
+        header('Location:index.php?action=admin');
+    }
+}
