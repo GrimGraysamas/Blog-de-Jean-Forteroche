@@ -28,7 +28,13 @@ function readPost() {
     $post = $postManager->readPost($_GET['postid']);
     $comments = $commentManager->readComments($_GET['postid']);
 
-    require('views/postView.php');
+    if ($post['title'] != "") {
+        require('views/postView.php');
+    }
+    else {
+        throw new Exception("Le billet sélectionné n'existe pas !");
+    }
+
 }
 
 // COMMENTS functions

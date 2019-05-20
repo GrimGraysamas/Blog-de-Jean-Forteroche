@@ -61,21 +61,32 @@ function createPost() {
 }
 
 function editPost() {
-    $postManager = new PostManager();
-    $post = $postManager->readPost($_GET['postid']);
+    if (isset($_SESSION['username'])) {
+        $postManager = new PostManager();
+        $post = $postManager->readPost($_GET['postid']);
+        
+        require('views/editpostView.php');
+    }
+    else {
+        throw new Exception("Vous n'êtes pas autorisé à accéder à cette page !");
+    }
 
-    require('views/editpostView.php');
 }
 
 function updatePost() {
     $postManager = new PostManager();
-    $update = $postManager->updatePost($_GET['postid'], $_POST['posttitle'], $_POST['postcontent']);
-
-    if ($update == false) {
-        throw new Exception('Impossible de mettre à jour le commentaire !');
+    if (isset($_SESSION['username'])) {
+        $update = $postManager->updatePost($_GET['postid'], $_POST['posttitle'], $_POST['postcontent']);
+    
+        if ($update == false) {
+            throw new Exception('Impossible de mettre à jour le commentaire !');
+        }
+        else {
+            header('Location:index.php?action=readpost&postid=' . $_GET['postid']);
+        }
     }
     else {
-        header('Location:index.php?action=readpost&postid=' . $_GET['postid']);
+        throw new Exception("Vous n'êtes pas autorisé à effectuer cette action !");
     }
 }
 
@@ -83,26 +94,37 @@ function deletePost() {
     $postManager = new PostManager();
     $commentManager = new CommentManager();
 
-    $post = $postManager->deletePost($_GET['postid']);
-    $comments = $commentManager->deleteComments($_GET['postid']);
-
-    if ($post == false && $comments == false) {
-        throw new Exception('Impossible de supprimer le billet !');
+    if (isset($_SESSION['username'])) {
+        $post = $postManager->deletePost($_GET['postid']);
+        $comments = $commentManager->deleteComments($_GET['postid']);
+    
+        if ($post == false && $comments == false) {
+            throw new Exception('Impossible de supprimer le billet !');
+        }
+        else {
+            header('Location:index.php?action=admin');
+        }
     }
     else {
-        header('Location:index.php?action=admin');
+        throw new Exception("Vous n'êtes pas autorisé à effectuer cette action !");
     }
+
 }
 
 function deleteComment() {
     $commentManager = new CommentManager();
 
-    $comment = $commentManager->deleteComment($_GET['commentid']);
-
-    if ($comment == false) {
-        throw new Exception('Impossible de supprimer le commentaire');
+    if (isset($_SESSION['username'])) {
+        $comment = $commentManager->deleteComment($_GET['commentid']);
+    
+        if ($comment == false) {
+            throw new Exception('Impossible de supprimer le commentaire');
+        }
+        else {
+            header('Location:index.php?action=admin');
+        }
     }
     else {
-        header('Location:index.php?action=admin');
+        throw new Exception("Vous n'êtes pas autorisé à effectuer cette action !");
     }
 }
