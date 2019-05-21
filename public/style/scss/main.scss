@@ -18,14 +18,15 @@ form {
 .lobster {
     font-family: 'Lobster', cursive;
 }    
-
+  
 #main {
-    max-width: 1350px;
-    box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;  
+    max-width: 1350px;  
+    box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.2);    
 }
 
-#slider {
-    width: 1920px;
+#slider {  
+    width: 1920px;    
     height: 480px;
     background-image: url('../img/cold-dawn-fog-325139.jpg');
     background-size: cover;
@@ -41,6 +42,57 @@ form {
     background-size: cover;
 }
 
-// @media all and (max-width: 1660) {
+#comment {
+    width: 50%;
+}
 
-// }
+@media all and (max-width: 1024px) {
+    #derchaps {
+        width: 100%!important;
+    }
+    #dercoms {
+        width: 100%!important;
+        margin-left: 50px!important;
+    }
+    #titrecoms {
+        font-size: 24px!important;
+    }
+    .billet {
+        width: 600px!important;
+    }
+    .billettitre {
+        font-size: 38px!important;
+    }
+    .billetinfos {
+        font-size: 24px!important;
+    }
+    .billetcontenu {
+        font-size: 36px!important;
+    }
+    .billetlien {
+        font-size: 30px!important;
+    }
+    #connexionsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #connexionform {
+        justify-content: center;
+    }
+    #connexion {
+        font-size: 38px;
+    }
+    #usernamelabel{
+        font-size: 32px;
+    }
+    #passwordlabel {
+        font-size: 32px;
+    }
+    // #username {
+
+    // }
+    // #password {
+
+    // }
+}

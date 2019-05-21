@@ -3,10 +3,10 @@
 <?php ob_start(); ?>
 
 <section class="section is-medium">
-    <div class="container is-large is-vertical">
-        <h2 class="title contentadd1">Erreur :</h2>
-        <h4 class="subtitle M50left"><?= $error ?></h4>
-        <a class="M50left M50top" href="index.php">Retour à l'accueil</a>
+    <div class="container marginless is-full is-vertical">
+        <h2 class="title contentadd1 P50left">Erreur :</h2>
+        <h4 class="subtitle M50left P50left"><?= $error ?></h4>
+        <a class="M50left M50top P50left" href="index.php">Retour à l'accueil</a>
     </div>
 </section>
 

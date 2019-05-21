@@ -1686,6 +1686,10 @@
           order: 1 !important;
 }
 
+.w100 {
+  width: 100%;
+}
+
 h1.title {
   font-size: 85px;
   font-weight: bold;
@@ -1945,6 +1949,7 @@ h6.subtitle {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 .columns .column.is-full {
@@ -5395,6 +5400,10 @@ h6.subtitle {
   width: 300px;
 }
 
+.container.is-full {
+  width: 100%;
+}
+
 .backtotop {
   position: fixed;
   width: 50px;
@@ -5571,6 +5580,7 @@ form input:focus {
 }
 
 #main {
+  width: 100%;
   max-width: 1350px;
   -webkit-box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.2);
@@ -5591,4 +5601,62 @@ form input:focus {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+#comment {
+  width: 50%;
+}
+
+@media all and (max-width: 1024px) {
+  #derchaps {
+    width: 100% !important;
+  }
+  #dercoms {
+    width: 100% !important;
+    margin-left: 50px !important;
+  }
+  #titrecoms {
+    font-size: 24px !important;
+  }
+  .billet {
+    width: 600px !important;
+  }
+  .billettitre {
+    font-size: 38px !important;
+  }
+  .billetinfos {
+    font-size: 24px !important;
+  }
+  .billetcontenu {
+    font-size: 36px !important;
+  }
+  .billetlien {
+    font-size: 30px !important;
+  }
+  #connexionsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;  
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #connexionform {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #connexion {
+    font-size: 38px;
+  }
+  #usernamelabel {
+    font-size: 32px;
+  }
+  #passwordlabel {
+    font-size: 32px;
+  }
 }

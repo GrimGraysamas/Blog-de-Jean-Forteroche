@@ -10,8 +10,8 @@
     <div class="level columns">
             <p class="column is-1-8 offset-1-32">Titre :</p>
             <p class="column is-1-8">Auteur :</p>
-            <p class="column is-4-8">Extrait du contenu :</p>
-            <p class="column is-1-8 offset-1-32">Heure de publication :</p>
+            <p class="column is-3-8">Extrait du contenu :</p>
+            <p class="column is-1-8 offset-1-32 noMleft">Heure de publication :</p>
     </div>
     <?php 
     while ($data = $posts->fetch()) {
@@ -21,7 +21,7 @@
             <p class="column is-1-8"><?= htmlspecialchars($data['author']); ?></p>
             <p class="column is-3-8"><?= mb_strimwidth(htmlspecialchars(strip_tags($data['content'])), 0, 80, "...")?></p>
             <p class="column is-1-8"><?= htmlspecialchars($data['postingtime']); ?></p>
-            <div class="column is-1-8 offset-1-32 flexRow alignCenter">
+            <div class="column is-1-8 offset-1-32 flexRow alignCenter wrap">
                 <a class="M25right" href="index.php?action=editpost&amp;postid=<?= $data['id'] ?>">Modifier</a>
                 <a href="index.php?action=deletepost&amp;postid=<?= $data['id'] ?>">Supprimer</a>
             </div>
@@ -39,7 +39,7 @@
     <div class="level columns">
             <p class="column is-1-8 offset-1-32">Auteur :</p>
             <p class="column is-3-8">Contenu :</p>
-            <p class="column is-1-8">Heure de publication :</p>
+            <p class="column is-1-8 P25left">Heure de publication :</p>
             <p class="P25left column is-1-8">Signalements :</p>
     </div>
     <?php 
@@ -48,7 +48,7 @@
         <div class="level columns">
             <p class="column is-1-8 offset-1-32"><?= htmlspecialchars($data['author']); ?></p>
             <p class="column is-3-8"><?= htmlspecialchars($data['content']); ?></p>
-            <p class="column is-1-8"><?= htmlspecialchars($data['postingtime']); ?></p>
+            <p class="column is-1-8 P25left"><?= htmlspecialchars($data['postingtime']); ?></p>
             <p class="P25left column is-1-8"><?=htmlspecialchars($data['reports']);?></p>
             <div class="column is-1-8 flexRow alignCenter">
                 <a href="index.php?action=deletecomment&amp;commentid=<?= $data['id'] ?>">Supprimer</a>

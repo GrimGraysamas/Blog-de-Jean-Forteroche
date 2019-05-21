@@ -4,9 +4,9 @@
 
 <section class="columns">
     <div class="container marginless is-medium column is-full M50top M50bottom fullCentered" id="slider">
-        <h2 class="title contentprimary">Billet simple pour l'Alaska</h2>
+        <h2 class="title contentprimary">"Billet simple pour l'Alaska"</h2>
     </div>
-   <div class="column is-4-9 offset-1-9">
+   <div class="column is-4-9 offset-1-9" id="derchaps">
         <h3 class="subtitle">Lire les derniers chapitres :</h3>
         <div class="container is-vertical">
             <?php
@@ -21,15 +21,15 @@
             </div>
             <?php
             }
-            $posts->closeCursor();
+            $posts->closeCursor(); 
             ?>
         </div>  
         
     </div>
     
-    <div class="column is-1-3">
+    <div class="column is-1-3" id="dercoms">
         <div class="container noMbottom M25bottom">
-            <h6 class="subtitle"><u>Derniers commentaires :</u></h6>
+            <h6 class="subtitle" id="titrecoms"><u>Derniers commentaires :</u></h6>
         </div>
         <div class="container marginless is-vertical">
         <?php
@@ -43,20 +43,20 @@
         <?php
         }
         $comments->closeCursor();
-        ?>
+        ?>  
         </div>
     </div>
 
     
 </section>
 <div class="divider bglight"></div>
-<section class="container P50left P50right is-vertical fullCentered">
+<section class="container is-full marginless is-vertical fullCentered">
     <?php 
         while ($data = $post->fetch())
         {
     ?>
     <h3 class="title M50bottom"><?= $data['title'] ?></h3>
-    <?= $data['content'] ?>
+    <h6 class="subtitle M50left M50right"><?= $data['content'] ?></h6>
     <?php 
         }
         $post->closeCursor();
