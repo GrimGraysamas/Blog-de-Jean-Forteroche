@@ -8,6 +8,7 @@ require_once('models/commentmanager.php');
 function listLatestPosts() {
     $postManager = new PostManager();
     $posts = $postManager->readLatestPosts();
+    $post = $postManager->readFirstPost();
 
     $commentManager = new CommentManager();
     $comments = $commentManager->readLatestComments();

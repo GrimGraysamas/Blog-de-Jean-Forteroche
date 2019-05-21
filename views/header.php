@@ -1,12 +1,9 @@
-<header>
+<header class="flexColumn alignCenter">
     <nav class="navbar bgprimary contentsecondary">
-        <div class="nav-section-1">
-            <h4 class="subtitle nav-item lobster contentadd1">Blog de Jean Forteroche</h4>
-        </div>
-        <div class="nav-section-2 nav-wrapper">
-            <div class="nav-item"><a href="index.php">Accueil</a></div>
-            <div class="nav-item"><a href="index.php?action=listallposts">Liste des billets</a></div>
-            <div class="nav-item"><a href="index.php?action=admin">Administration</a></div>
+        <div class="nav-wrapper nav-section-1 flexColumn">
+            <h4 class="title nav-item lobster contentadd1">Blog de Jean Forteroche</h4>
+            <h6 class="subtitle nav-item"><em>Billet simple pour l'Alaska</em></h6>
         </div>
     </nav>
+    <div class="divider bglight"></div>
 </header> 

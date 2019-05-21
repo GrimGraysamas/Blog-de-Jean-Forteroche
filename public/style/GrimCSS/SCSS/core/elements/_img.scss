@@ -1,0 +1,22 @@
+.img {
+    &.is-rounded {
+        border-radius: 100%;
+    }
+
+    &.is-64x64 {
+        height: 64px;
+        width: 64px;
+    }
+    &.is-128x128 {
+        height: 128px;
+        width: 128px;
+    }
+    &.is-256x256 {
+        height: 256px;
+        width: 256px;
+    }
+    &.is-512x512 {
+        height: 512px;
+        width: 512px;
+    }
+}     

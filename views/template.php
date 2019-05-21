@@ -7,9 +7,11 @@
         <link href="public/style/CSS/main.css" rel="stylesheet" /> 
     </head>
         
-    <body class="bgprimary marginless paddingless">
-        <?php require('header.php'); ?>
-        <?= $content ?> 
-        <?php require('footer.php'); ?>
-    </body>
+    <body class="marginless paddingless fullCentered" id="bodybg">
+        <section class="bgprimary" id="main">  
+            <?php require('header.php'); ?>
+            <?= $content ?> 
+            <?php require('footer.php'); ?>
+        </section>  
+    </body>  
 </html>

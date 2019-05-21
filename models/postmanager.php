@@ -44,6 +44,13 @@ class PostManager extends manager
         return $req;
     }
 
+    public function readFirstPost() {
+        $db = $this->dbConnect();
+        $req = $db->query('SELECT * FROM posts ORDER BY postingtime ASC LIMIT 1');
+
+        return $req;
+    }
+
     public function getLastId() {
         $db = $this->dbConnect();
         $req = $db->query('SELECT id FROM posts ORDER BY id DESC LIMIT 1');
@@ -54,7 +61,7 @@ class PostManager extends manager
 
     public function readAllPosts() {
         $db = $this->dbConnect();  
-        $req = $db->query('SELECT * FROM posts ORDER BY postingtime DESC');
+        $req = $db->query('SELECT * FROM posts ORDER BY postingtime ASC');
 
         return $req;
     }

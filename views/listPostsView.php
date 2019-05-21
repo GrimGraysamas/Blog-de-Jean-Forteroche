@@ -8,11 +8,11 @@
         while ( $data = $posts->fetch())
         {
     ?>
-        <div class="container is-vertical is-small">
+        <div class="container is-vertical is-small border">
             <h6 class="title noMleft"><?= $data['title'] ?></h6>
-            <p class="noMleft">écrit par <?= $data['author'] ?>, le <?= $data['postingtime'] ?>.</p>
+            <p class="noMleft">par <strong><?= $data['author'] ?></strong> - le <?= $data['postingtime'] ?>.</p>
             <div class=" noMleft divider bgadd1"></div>
-            <p class="noMleft"><?= mb_strimwidth($data['content'], 0, 200, "...")?></p>
+            <p class="noMleft"><?= mb_strimwidth($data['content'], 0, 500, "...")?></p>
             <a href="index.php?action=readpost&amp;postid=<?= $data['id'] ?>">Lire plus...</a>
         </div>
     <?php 

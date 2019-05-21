@@ -1764,7 +1764,7 @@ h6.subtitle {
 
 .is-2 {
   font-size: 22px;
-}  
+}
 
 .is-3 {
   font-size: 18px;
@@ -1870,11 +1870,11 @@ h6.subtitle {
 }
 
 .hero.has-navbar {
-  height: 90vh;
+  height: 85vh;
 }
 
 .navbar {
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1903,26 +1903,10 @@ h6.subtitle {
 }
 
 .navbar .nav-section-1 {
-  width: 50%;
+  width: 100%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-}
-
-.navbar .nav-section-2 {
-  width: 50%;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5492,7 +5476,7 @@ h6.subtitle {
 
 .divider.is-vertical {
   width: 1px;
-  height: auto;
+  height: 100%;
   margin: 25px 30px 25px;
 }
 
@@ -5543,6 +5527,30 @@ h6.subtitle {
   border: solid 2px "secondary", #232531;
 }
 
+.img.is-rounded {
+  border-radius: 100%;
+}
+
+.img.is-64x64 {
+  height: 64px;
+  width: 64px;
+}
+
+.img.is-128x128 {
+  height: 128px;
+  width: 128px;
+}
+
+.img.is-256x256 {
+  height: 256px;
+  width: 256px;
+}
+
+.img.is-512x512 {
+  height: 512px;
+  width: 512px;
+}
+
 * {
   font-family: 'Raleway', sans-serif;
   color: #1b1d24;
@@ -5560,4 +5568,27 @@ form input:focus {
 
 .lobster {
   font-family: 'Lobster', cursive;
+}
+
+#main {
+  max-width: 1350px;
+  -webkit-box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+#slider {
+  width: 1920px;
+  height: 480px;
+  background-image: url("../img/cold-dawn-fog-325139.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+#bodybg {
+  background-image: url("../img/black-and-white-blur-close-up-261763.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }

@@ -1,7 +1,8 @@
 <footer class="fullCentered flexColumn">
-    <div class="divider bgdark"></div>
-    <div class="container is-vertical">
-        <p class="is-3 text-centered">Le blog de Jean Forteroche est lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Reprehenderit, ab ratione unde mollitia ea sunt labore repellat aperiam commodi excepturi, repudiandae similique ipsa facilis voluptates! <br>Molestias ut iusto odit porro. Recusandae, earum atque rem numquam consequatur <br> nulla perferendis maxime quae et accusantium inventore labore fugiat debitis illo necessitatibus aut a unde pariatur quibusdam. <br>Ea corrupti asperiores at totam, suscipit excepturi.</p>
+    <div class="divider bglight"></div>
+    <div class="container is-vertical alignCenter is-normal noMtop noMbottom">
+        <img src="../public/style/img/adult-beach-casual-736716.jpg" alt="Jean Forteroche" class="img is-128x128 is-rounded">
+        <p class="is-3 text-centered">Jean Forteroche est un écrivain et auteur français né en 1970. Il a publié de nombreux romans d'aventure. Il travaille actuellement sur son nouveau roman : "Billet simple pour l'Alaska".</p>
         <nav class="navbar fullCentered">
             <div class="nav-wrapper">
                 <div class="nav-item"><a class="textdecorationnone" href="index.php">Accueil</a></div>
@@ -10,4 +11,4 @@
             </div>
         </nav>
     </div>
-</footer>
+</footer>      

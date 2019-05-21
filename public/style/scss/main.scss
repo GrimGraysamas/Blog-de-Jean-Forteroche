@@ -17,6 +17,30 @@ form {
 }
 .lobster {
     font-family: 'Lobster', cursive;
+}    
+
+#main {
+    max-width: 1350px;
+    box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.2);
 }
-  
-        
+
+#slider {
+    width: 1920px;
+    height: 480px;
+    background-image: url('../img/cold-dawn-fog-325139.jpg');
+    background-size: cover;
+    background-position: center;
+    // filter: brightness(75%);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+}    
+
+#bodybg {
+    background-image: url('../img/black-and-white-blur-close-up-261763.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+// @media all and (max-width: 1660) {
+
+// }

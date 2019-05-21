@@ -9,9 +9,9 @@
   });
 </script>
 
-<section class="container is-vertical">
-  <form action="index.php?action=applychanges&amp;postid=<?= $post['id'] ?>" method="POST">
-    <textarea type="text" id="posttitle" name="posttitle" placeholder="Titre du billet" cols="50" rows="1" class="is-1"><?= $post['title'] ?></textarea>
+<section class="container noMtop M25top is-vertical">
+  <form action="index.php?action=applychanges&amp;postid=<?= $post['id'] ?>" method="POST" class="flexColumn">
+    <textarea type="text" id="posttitle" name="posttitle" placeholder="Titre du billet" class="is-1 is-full"><?= $post['title'] ?></textarea>
     <textarea name="postcontent" id="postcontent" rows="50" placeholder="Contenu du billet"><?= $post['content'] ?></textarea>
     <button class="button is-rounded add1-primary is-outlined" type="submit" name="submit" id="submit">Confirmer les changements</button>
   </form>
@@ -20,4 +20,4 @@
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require('template.php'); ?>
+<?php require('admintemplate.php'); ?>

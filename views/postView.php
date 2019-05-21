@@ -3,17 +3,17 @@
 <?php ob_start();?>
 
 <section>
-    <div class="container is-vertical is-large">
-        <h2 class="title M50top M50bottom noMleft"><?= htmlspecialchars($post['title']); ?></h2>
-        <h6 class="subtitle M25bottom M25top noMleft">Ecrit par <strong><?= htmlspecialchars($post['author']); ?></strong> le <?= htmlspecialchars($post['postingtime']); ?></h6>
-        <div class="container is-large M50left">
-            <p class="is-1"><?= $post['content'] ?></p>
+    <div class="container noMtop is-vertical is-large">
+        <h3 class="title M50top M50bottom noMleft"><?= htmlspecialchars($post['title']); ?></h3>
+        <h6 class="subtitle M25bottom M25top noMleft">Ecrit par <strong class="contentadd1"><?= htmlspecialchars($post['author']); ?></strong> le <?= htmlspecialchars($post['postingtime']); ?></h6>
+        <div class="container marginless is-medium M50top M50left is-vertical">
+          <?= $post['content'] ?>
         </div>
     </div>
 </section>
 <section class="section is-small noMtop">
     <form class="container is-vertical is-medium" action="index.php?action=addcomment&amp;postid=<?= $post['id'] ?>" method="post">
-        <h2 class="subtitle">Ajouter un commentaire :</h2>
+        <h1 class="subtitle">Ajouter un commentaire :</h1>
         <div class="container is-horizontal marginless alignEnd P25">
             <div class="container is-vertical marginless P25">
                 <label for="author">Auteur :</label>
@@ -22,7 +22,7 @@
             </div>
             <div class="container is-vertical marginless P25">
                 <label for="comment">Commentaire :</label>
-                <textarea class="bordernone" name="comment" id="comment" rows="1" cols="175"></textarea>
+                <textarea class="bordernone" name="comment" id="comment" rows="1" cols="100"></textarea>
                 <div class="divider bgadd1 noMleft noMtop"></div>
             </div>
             <div>
@@ -40,8 +40,8 @@
     <div class="container is-full spaceBetween marginless alignCenter">
         <div class="container is-vertical marginless M50left">
             <div class="container marginless M25bottom alignEnd">
-                <h4 class="subtitle noMbottom"><?= htmlspecialchars($data['author']); ?></h4>
-                <p class="noMbottom M25left">le <?= htmlspecialchars($data['postingtime']); ?></p>
+                <h4 class="subtitle noMbottom"><strong class="contentadd1"><?= htmlspecialchars($data['author']); ?></strong></h4>
+                <p class="noMbottom M25left"> le <?= htmlspecialchars($data['postingtime']); ?></p>
             </div>
             <div class="container marginless M50left"><p><?= htmlspecialchars($data['content']); ?></p></div>
         </div>
