@@ -79,7 +79,7 @@ function updatePost() {
         $update = $postManager->updatePost($_GET['postid'], $_POST['posttitle'], $_POST['postcontent']);
     
         if ($update == false) {
-            throw new Exception('Impossible de mettre à jour le commentaire !');
+            throw new Exception('Impossible de mettre à jour le billet !');
         }
         else {
             header('Location:index.php?action=readpost&postid=' . $_GET['postid']);
