@@ -7,20 +7,20 @@ class Manager
         return $db;
     }
 
-    public function getElement($tablename, $name) {
-        $db = $this->dbConnect();
-        $req = $db->prepare('SELECT ? FROM ? ORDER BY id DESC');
-        $req->execute(array($name, $tablename));
-        $data = $req->fetch();
+    // public function getElement($tablename, $name) {
+    //     $db = $this->dbConnect();
+    //     $req = $db->prepare('SELECT ? FROM ? ORDER BY id DESC');
+    //     $req->execute(array($name, $tablename));
+    //     $data = $req->fetch();
 
-        return $data;
-    }
+    //     return $data;
+    // }
 
-    public function search($search) {
-        $db = $this->dbConnect();
-        $req = $db->prepare("SELECT * FROM posts WHERE title LIKE '%?%' OR author LIKE '%?%' OR content LIKE '%?%' OR postingtime LIKE '%?%'");
-        $req->execute(array($search, $search, $search, $search));
+    // public function search($search) {
+    //     $db = $this->dbConnect();
+    //     $req = $db->prepare("SELECT * FROM posts WHERE title LIKE '%?%' OR author LIKE '%?%' OR content LIKE '%?%' OR postingtime LIKE '%?%'");
+    //     $req->execute(array($search, $search, $search, $search));
 
-        return $req;
-    }
+    //     return $req;
+    // }
 }

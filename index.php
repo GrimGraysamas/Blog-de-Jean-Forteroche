@@ -40,7 +40,7 @@ try {
             }
         }
         elseif ($_GET['action'] == 'admin') {
-            administrate('JeanForteroche');
+            administrate();
         }
         elseif ($_GET['action'] == 'connect') {
             if (!empty($_POST['username']) && !empty($_POST['password'])) {

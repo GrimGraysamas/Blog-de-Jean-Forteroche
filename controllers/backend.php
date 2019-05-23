@@ -25,7 +25,7 @@ function connect($username, $password) {
     }
 }
 
-function administrate($username) 
+function administrate() 
 {
     $userManager = new UserManager();
 
