@@ -5,7 +5,7 @@
 <section>
     <div class="container marginless is-vertical is-full">
         <h3 class="title M50top M50bottom P50left noMleft"><?= htmlspecialchars($post['title']); ?></h3>
-        <h6 class="subtitle M25bottom M25top noMleft P50left">Ecrit par <strong class="contentadd1"><?= htmlspecialchars($post['author']); ?></strong> le <?= htmlspecialchars($post['postingtime']); ?></h6>
+        <h6 class="subtitle M25bottom M25top noMleft P50left">Ecrit par <strong class="contentadd1"><?= htmlspecialchars($post['author']); ?></strong> le <?= htmlspecialchars(date("j/n/Y, à G:i" , strtotime($post['postingtime']))); ?></h6>
         <div class="container marginless is-medium M50top M50left is-vertical">
           <?= $post['content'] ?>
         </div>
@@ -41,7 +41,7 @@
         <div class="container is-vertical marginless M50left">
             <div class="container marginless M25bottom alignEnd">
                 <h4 class="subtitle noMbottom"><strong class="contentadd1"><?= htmlspecialchars($data['author']); ?></strong></h4>
-                <p class="noMbottom M25left"> le <?= htmlspecialchars($data['postingtime']); ?></p>
+                <p class="noMbottom M25left"> le <?= htmlspecialchars(date("j/n/Y, à G:i" , strtotime($data['postingtime']))); ?></p>
             </div>
             <div class="container marginless M50left"><p><?= htmlspecialchars($data['content']); ?></p></div>
         </div>

@@ -16,7 +16,7 @@
             <div class="container marginless is-vertical M50bottom">
                 <h4 class="subtitle noMleft"><?= $data['title'] ?></h4>
                 <h6 class="subtitle M25left M25top"><?= mb_strimwidth($data['content'], 0, 350, "...")?></h6>
-                <p><em>écrit par <?= $data['author'] ?>, le <?= $data['postingtime'] ?></em></p>
+                <p><em>écrit par <?= $data['author'] ?>, le <?= date("j/n/Y, à G:i" , strtotime($data['postingtime'])) ?></em></p>
                 <a href="index.php?action=readpost&amp;postid=<?= $data['id'] ?>">Lire plus...</a>
             </div>
             <?php
@@ -37,7 +37,7 @@
         {
         ?>
         <div class="container marginless P25left P50right is-vertical">
-            <p><strong><?= $data['author'] ?></strong>, le <?= $data['postingtime'] ?></p>
+            <p><strong><?= $data['author'] ?></strong>, le <?= date("j/n/Y, à G:i" , strtotime($data['postingtime'])) ?></p>
             <?= $data['content'] ?>
         </div>
         <?php

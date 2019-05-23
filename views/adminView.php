@@ -20,7 +20,7 @@
             <p class="column is-1-8 offset-1-32"><a href="index.php?action=readpost&amp;postid=<?= $data['id'] ?>"><?= htmlspecialchars($data['title']); ?></a></p>
             <p class="column is-1-8"><?= htmlspecialchars($data['author']); ?></p>
             <p class="column is-3-8"><?= mb_strimwidth(htmlspecialchars(strip_tags($data['content'])), 0, 80, "...")?></p>
-            <p class="column is-1-8"><?= htmlspecialchars($data['postingtime']); ?></p>
+            <p class="column is-1-8"><?= htmlspecialchars(date("j/n/Y, à G:i" , strtotime($data['postingtime']))); ?></p>
             <div class="column is-1-8 offset-1-32 flexRow alignCenter wrap">
                 <a class="M25right" href="index.php?action=editpost&amp;postid=<?= $data['id'] ?>">Modifier</a>
                 <a href="index.php?action=deletepost&amp;postid=<?= $data['id'] ?>">Supprimer</a>
@@ -48,7 +48,7 @@
         <div class="level columns">
             <p class="column is-1-8 offset-1-32"><?= htmlspecialchars($data['author']); ?></p>
             <p class="column is-3-8"><?= htmlspecialchars($data['content']); ?></p>
-            <p class="column is-1-8 P25left"><?= htmlspecialchars($data['postingtime']); ?></p>
+            <p class="column is-1-8 P25left"><?= htmlspecialchars(date("j/n/Y, à G:i" , strtotime($data['postingtime']))); ?></p>
             <p class="P25left column is-1-8"><?=htmlspecialchars($data['reports']);?></p>
             <div class="column is-1-8 flexRow alignCenter">
                 <a href="index.php?action=deletecomment&amp;commentid=<?= $data['id'] ?>">Supprimer</a>

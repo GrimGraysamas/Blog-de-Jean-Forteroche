@@ -96,9 +96,8 @@ function deletePost() {
 
     if (isset($_SESSION['username'])) {
         $post = $postManager->deletePost($_GET['postid']);
-        $comments = $commentManager->deleteComments($_GET['postid']);
-    
-        if ($post == false && $comments == false) {
+        
+        if ($post == false) {
             throw new Exception('Impossible de supprimer le billet !');
         }
         else {
